@@ -1,0 +1,33 @@
+\chapter{Solution Design}
+
+\section{Implementation Design}
+1) Online profile of people - Used for online shopping and retail shops\\
+2) Take measurements at a retailer - Virtual Dressing room - A part of the shopping experience and will reduce hassle of trying on clothes\\
+3) Amount wasted in trying on clothes or online returns?\\
+4) Could be used for personalised tailoring
+5) Example of UI - Explanation of how it works
+
+\section{Component Selection}
+1) Choice of Kinect\\
+2) Choice of Windows SDK\\
+
+\section{Algorithm Design}
+1) Windows examples used - Background Removal, Colour Stream and Skeleton Tracking
+
+2) Run through of algorithm
+- Background Removed frame
+- Send image to separate class for processing
+- Create array with background removed pixels
+- Draw skeleton on image
+- Create axes for measurement - Perpendicular or straight depending on particular measurement
+
+\section{Experimental Design}
+- Constraints - Men, distance from Kinect, Number of views, 3D Modelling
+- UI to run simulated dressing room
+- Volunteer to pose as instructed by person controlling UI
+- Take measurement of front
+- Take left
+- Take back
+- Take right 
+- At each point, take actual readings with uncertainty
+- For one volunteer, take 5 readings in relatively the same pose - Determine uncertainty 

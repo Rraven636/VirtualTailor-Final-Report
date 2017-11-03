@@ -17,16 +17,17 @@
 \contentsline {chapter}{\numberline {6}Results}{10}{chapter.6}
 \contentsline {section}{\numberline {6.1}Overall Results}{10}{section.6.1}
 \contentsline {section}{\numberline {6.2}View Performance}{11}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Front Performance}{12}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Left Performance}{13}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Back Performance}{13}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Right Performance}{13}{subsection.6.2.4}
-\contentsline {section}{\numberline {6.3}Limb Performance}{13}{section.6.3}
-\contentsline {section}{\numberline {6.4}Impact of Clothing}{13}{section.6.4}
-\contentsline {section}{\numberline {6.5}Other Empirical Insights}{13}{section.6.5}
-\contentsline {chapter}{\numberline {7}Discussion}{18}{chapter.7}
-\contentsline {chapter}{\numberline {8}Conclusions}{19}{chapter.8}
-\contentsline {chapter}{\numberline {9}Recommendations}{20}{chapter.9}
-\contentsline {chapter}{\numberline {A}Detailed Results of Volunteers}{23}{appendix.A}
-\contentsline {chapter}{\numberline {B}Addenda}{24}{appendix.B}
-\contentsline {section}{\numberline {B.1}Ethics Forms}{24}{section.B.1}
+\contentsline {section}{\numberline {6.3}Limb Performance}{15}{section.6.3}
+\contentsline {section}{\numberline {6.4}Impact of Clothing}{15}{section.6.4}
+\contentsline {section}{\numberline {6.5}Other Empirical Insights}{15}{section.6.5}
+\contentsline {chapter}{\numberline {7}Analysis}{17}{chapter.7}
+\contentsline {subsection}{\numberline {7.0.1}Front Performance}{17}{subsection.7.0.1}
+\contentsline {subsection}{\numberline {7.0.2}Left Performance}{18}{subsection.7.0.2}
+\contentsline {subsection}{\numberline {7.0.3}Back Performance}{18}{subsection.7.0.3}
+\contentsline {subsection}{\numberline {7.0.4}Right Performance}{18}{subsection.7.0.4}
+\contentsline {chapter}{\numberline {8}Discussion}{19}{chapter.8}
+\contentsline {chapter}{\numberline {9}Conclusions}{20}{chapter.9}
+\contentsline {chapter}{\numberline {10}Recommendations}{21}{chapter.10}
+\contentsline {chapter}{\numberline {A}Detailed Results of Volunteers}{24}{appendix.A}
+\contentsline {chapter}{\numberline {B}Addenda}{25}{appendix.B}
+\contentsline {section}{\numberline {B.1}Ethics Forms}{25}{section.B.1}

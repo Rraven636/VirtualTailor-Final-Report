@@ -6,17 +6,27 @@
 \BOOKMARK [1][-]{section.1.3}{Scope and Limitations}{chapter.1}% 6
 \BOOKMARK [1][-]{section.1.4}{Plan of development}{chapter.1}% 7
 \BOOKMARK [0][-]{chapter.2}{Literature Review}{}% 8
-\BOOKMARK [0][-]{chapter.3}{Solution Design}{}% 9
-\BOOKMARK [1][-]{section.3.1}{Implementation Design}{chapter.3}% 10
-\BOOKMARK [1][-]{section.3.2}{Component Selection}{chapter.3}% 11
-\BOOKMARK [1][-]{section.3.3}{Algorithm Design}{chapter.3}% 12
-\BOOKMARK [0][-]{chapter.4}{Methodology}{}% 13
-\BOOKMARK [0][-]{chapter.5}{Results}{}% 14
-\BOOKMARK [1][-]{section.5.1}{Simulation Results}{chapter.5}% 15
-\BOOKMARK [1][-]{section.5.2}{Experimental Results}{chapter.5}% 16
-\BOOKMARK [0][-]{chapter.6}{Discussion}{}% 17
-\BOOKMARK [0][-]{chapter.7}{Conclusions}{}% 18
-\BOOKMARK [0][-]{chapter.8}{Recommendations}{}% 19
-\BOOKMARK [0][-]{appendix.A}{Additional Files and Schematics}{}% 20
-\BOOKMARK [0][-]{appendix.B}{Addenda}{}% 21
-\BOOKMARK [1][-]{section.B.1}{Ethics Forms}{appendix.B}% 22
+\BOOKMARK [0][-]{chapter.3}{Background Information}{}% 9
+\BOOKMARK [0][-]{chapter.4}{Solution Design}{}% 10
+\BOOKMARK [1][-]{section.4.1}{Implementation Design}{chapter.4}% 11
+\BOOKMARK [1][-]{section.4.2}{Component Selection}{chapter.4}% 12
+\BOOKMARK [1][-]{section.4.3}{Algorithm Design}{chapter.4}% 13
+\BOOKMARK [1][-]{section.4.4}{Experimental Design}{chapter.4}% 14
+\BOOKMARK [0][-]{chapter.5}{Methodology}{}% 15
+\BOOKMARK [1][-]{section.5.1}{Aim}{chapter.5}% 16
+\BOOKMARK [0][-]{chapter.6}{Results}{}% 17
+\BOOKMARK [1][-]{section.6.1}{Overall Results}{chapter.6}% 18
+\BOOKMARK [1][-]{section.6.2}{View Performance}{chapter.6}% 19
+\BOOKMARK [2][-]{subsection.6.2.1}{Front Performance}{section.6.2}% 20
+\BOOKMARK [2][-]{subsection.6.2.2}{Left Performance}{section.6.2}% 21
+\BOOKMARK [2][-]{subsection.6.2.3}{Back Performance}{section.6.2}% 22
+\BOOKMARK [2][-]{subsection.6.2.4}{Right Performance}{section.6.2}% 23
+\BOOKMARK [1][-]{section.6.3}{Limb Performance}{chapter.6}% 24
+\BOOKMARK [1][-]{section.6.4}{Impact of Clothing}{chapter.6}% 25
+\BOOKMARK [1][-]{section.6.5}{Other Empirical Insights}{chapter.6}% 26
+\BOOKMARK [0][-]{chapter.7}{Discussion}{}% 27
+\BOOKMARK [0][-]{chapter.8}{Conclusions}{}% 28
+\BOOKMARK [0][-]{chapter.9}{Recommendations}{}% 29
+\BOOKMARK [0][-]{appendix.A}{Detailed Results of Volunteers}{}% 30
+\BOOKMARK [0][-]{appendix.B}{Addenda}{}% 31
+\BOOKMARK [1][-]{section.B.1}{Ethics Forms}{appendix.B}% 32

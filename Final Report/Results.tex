@@ -311,9 +311,15 @@ Apart from the above presented tables of results, other observations were made o
 \subsubsection{Background Removal Error} 
 There were instances where the Background Removal functionality of the Kinect performed with error. These errors presented themselves in two manners:
 
+
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Error Example_Blurred.png}
+	{%
+		\setlength{\fboxsep}{0pt}%
+		\setlength{\fboxrule}{1pt}%
+		\fbox{
+	\includegraphics[width=0.7\textwidth]{ErrorExample_Blurred.png}
+	}}
 	\caption{An example of failures of extremity measurements due to background removal and padding errors detected in early testing}
 	\label{fig:errorExample}
 \end{figure}

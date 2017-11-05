@@ -326,21 +326,36 @@ There were instances where the Background Removal functionality of the Kinect pe
 
 \begin{figure}[ht]
 	\centering
+	{%
+		\setlength{\fboxsep}{0pt}%
+		\setlength{\fboxrule}{1pt}%
+		\fbox{
 	\includegraphics[width=0.7\textwidth]{Uncertainty_Left4.png}
+	}}
 	\caption{An example of trailing pixels detected by background removal that forms part of padding errors}
 	\label{fig:uncertaintyLeft4}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
+	{%
+		\setlength{\fboxsep}{0pt}%
+		\setlength{\fboxrule}{1pt}%
+		\fbox{
 	\includegraphics[width=0.7\textwidth]{Volunteer1_Back.png}
+	}}
 	\caption{An example of failures of extremity measurements due to background removal and padding errors during final testing}
 	\label{fig:volunteer1Back}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
+	{%
+		\setlength{\fboxsep}{0pt}%
+		\setlength{\fboxrule}{1pt}%
+		\fbox{
 	\includegraphics[width=0.7\textwidth]{Volunteer7_Back.png}
+	}}
 	\caption{An example of the presence of a background removal error relating to incorrect pixel removal during final testing}
 	\label{fig:volunteer7Back}
 \end{figure}
@@ -350,9 +365,9 @@ During early and final testing of the system, it was observed that the output ba
 
 An example of an early test with the above error can be seen in Figure \ref{fig:errorExample}. In this image, it can be clearly seen that extra background pixels have been included in regions under the outstretched arms, on the sides of the torso and underneath the groin. 
 
-During the final testing, an additional caveat to the above error was detected. It was observed that when the detected human was processed while moving, trailing pixels from the previous position would be included in the image and form part of the padding.
+An additional caveat to the above error was also detected. It was observed that when the detected human was processed while moving, trailing pixels from the previous position would be included in the image and form part of the padding.
 
-An example of a final test with trailing pixels can be seen in Figure \ref{fig:uncertaintyLeft4}. In this image, careful inspection of the extended hand reveals that trailing pixels are present due to movement of the detected human.
+This was present in both early testing and final testing. In Figure \ref{fig:errorExample}, mentioned above, this can be clearly seen as the right leg has a "ghost" or "trailing" leg present. An example of a final test with trailing pixels can be seen in Figure \ref{fig:uncertaintyLeft4}. In this image, careful inspection of the extended hand reveals that trailing pixels are present due to movement of the detected human.
 
 \paragraph{Incorrect Pixel Removal}
 The other error present as a result of the Background Removal functionality is the incorrect pixel removal of pixels that form part of the detected human. The parts of the body that suffered the most frequently from this error are the parts at the extremes (E.g. Head, hands, "feet, etc.). Additionally, the view in which incorrect pixel removal from the "Head" was the most prevalent, was the "Back" view. 

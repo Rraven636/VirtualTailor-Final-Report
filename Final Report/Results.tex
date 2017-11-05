@@ -308,7 +308,7 @@ As for the adjusted upper and lower body measurements (Table \ref{tab:upperBodyR
 
 Apart from the above presented tables of results, other observations were made of the system during its use. These observations are explained in each of the following subsections:
 
-\subsubsection{Background Removal Error} 
+\subsubsection{Background Removal Error} \label{backgroundRemovalError}
 There were instances where the Background Removal functionality of the Kinect performed with error. These errors presented themselves in two manners:
 
 
@@ -342,10 +342,10 @@ There were instances where the Background Removal functionality of the Kinect pe
 		\setlength{\fboxsep}{0pt}%
 		\setlength{\fboxrule}{0.5pt}%
 		\fbox{
-	\includegraphics[width=0.7\textwidth]{Volunteer1_Back.png}
+	\includegraphics[width=0.7\textwidth]{Volunteer7_Back.png}
 	}}
-	\caption{An example of failures of extremity measurements due to background removal and padding errors during final testing}
-	\label{fig:volunteer1Back}
+	\caption{An example of the presence of a background removal error relating to incorrect pixel removal during final testing}
+	\label{fig:volunteer7Back}
 \end{figure}
 
 \begin{figure}[ht]
@@ -354,10 +354,10 @@ There were instances where the Background Removal functionality of the Kinect pe
 		\setlength{\fboxsep}{0pt}%
 		\setlength{\fboxrule}{0.5pt}%
 		\fbox{
-	\includegraphics[width=0.7\textwidth]{Volunteer7_Back.png}
+			\includegraphics[width=0.7\textwidth]{Volunteer1_Back.png}
 	}}
-	\caption{An example of the presence of a background removal error relating to incorrect pixel removal during final testing}
-	\label{fig:volunteer7Back}
+	\caption{An example of failures of extremity measurements due to background removal and padding errors during final testing}
+	\label{fig:volunteer1Back}
 \end{figure}
 
 \paragraph{Extra Padding}
@@ -367,7 +367,7 @@ An example of an early test with the above error can be seen in Figure \ref{fig:
 
 An additional caveat to the above error was also detected. It was observed that when the detected human was processed while moving, trailing pixels from the previous position would be included in the image and form part of the padding.
 
-This was present in both early testing and final testing. In Figure \ref{fig:errorExample}, mentioned above, this can be clearly seen as the right leg has a "ghost" or "trailing" leg present. An example of a final test with trailing pixels can be seen in Figure \ref{fig:uncertaintyLeft4}. In this image, careful inspection of the extended hand reveals that trailing pixels are present due to movement of the detected human.
+This was present in both early testing and final testing. In Figure \ref{fig:errorExample}, mentioned above, this can be clearly seen as the left leg has a "ghost" or "trailing" leg present. An example of a final test with trailing pixels can be seen in Figure \ref{fig:uncertaintyLeft4}. In this image, careful inspection of the extended hand reveals that trailing pixels are present due to movement of the detected human.
 
 \paragraph{Incorrect Pixel Removal}
 The other error present as a result of the Background Removal functionality is the incorrect pixel removal of pixels that form part of the detected human. The parts of the body that suffered the most frequently from this error are the parts at the extremes (E.g. Head, hands, "feet, etc.). Additionally, the view in which incorrect pixel removal from the "Head" was the most prevalent, was the "Back" view. 
@@ -375,8 +375,23 @@ The other error present as a result of the Background Removal functionality is t
 An example of a final test with incorrect pixel removal can be seen in Figure \ref{fig:volunteer7Back}. Careful inspection of this image reveals that pixels that form part of the head and hands of the detected human have been incorrectly removed. 
 
 \subsubsection{Overlap Error}
-It was observed that occasionally, the system failed to detect a correct extremity. As mentioned in \hl{Insert Reference}, measuring extremities assumes that an outline of a limb will be against a background and will thus be removed  due to an overlap. 
+It was observed that occasionally, the system failed to detect a correct extremity. As mentioned in \hl{Insert Reference}, measuring extremities assumes that an outline of a limb will be against a background and thus, after the background is removed, will be clearly distinguishable. However, it was observed that in instances where an outline overlapped with another part of the body or the extra background padding mentioned in section \ref{backgroundRemovalError} above, the outline would not be detected by the system. 
 
+A clear example can be seen in Figure \ref{fig:errorExample}. The "Chest", "Upper Right Leg", "Upper Left Leg" and "Lower Left Leg" in this image have been erroneously extended due to overlap errors. The "Upper Leg" measurements were extended due to overlap of the detected human's thighs, thus making their division indistinguishable. The "Chest" and the "Lower Left Leg measurement were both extended due to overlap caused by background padding. Respectively, they were caused by the padding underneath the arms and trailing pixels of the left leg. 
+
+Examples of this error during final testing can be seen in Figure \ref{fig:volunteer1Back} and Figure \ref{fig:volunteer1Right}. In Figure \ref{fig:volunteer1Back}, the overlap error is present in the "Chest" measurement as its plane of measurement intersected with the right arm, which was too low in this case. In Figure \ref{fig:volunteer1Right}, the overlap error is present in the "Lower Right Leg" as its plane of measurement intersected with the "Lower Left Leg". The volunteer in this case was facing right for a "Right" view measurement. However, the volunteer's legs were not together and slightly ajar, thus creating an unwanted overlap.
+
+\begin{figure}[ht]
+	\centering
+	{%
+		\setlength{\fboxsep}{0pt}%
+		\setlength{\fboxrule}{0.5pt}%
+		\fbox{
+			\includegraphics[width=0.7\textwidth]{Volunteer1_Right.png}
+	}}
+	\caption{An example of overlap error due to orientation during final testing}
+	\label{fig:volunteer1Right}
+\end{figure}
 
 8) Empirical Insights - Trying to determine a correct measurement, Legs not together, length of people, skinny person, skeleton not perfectly fitting, background edges not perfect \\
 

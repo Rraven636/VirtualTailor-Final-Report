@@ -367,7 +367,7 @@ As seen in Figure \ref{fig:uncertaintyFreqDist} below, all the uncertainty value
 
 Upon closer inspection of Table \ref{tab:upperBodyUncertainty} and Table \ref{tab:lowerBodyUncertainty}, it is clear that all the individual and average uncertainty values fell within the desired range of 10\%. The most reliable reading (One with the smallest uncertainty) was the "Chest" measurement with a 1.44\% uncertainty. As a group, the leg measurements seemed to be more reliable than the arm measurements as all of the average leg uncertainties fell within 5\%. On the other end of the spectrum, the measurement with the greatest average uncertainty was the "Left Arm" with an uncertainty of 7.20\%.
 
-\subsection{Other Empirical Observations}
+\subsection{Other Empirical Observations} \label{empiricalObservations}
 
 Apart from the above presented tables of results, other observations were made of the system during its use. These observations are explained in each of the following subsections:
 
@@ -594,7 +594,7 @@ Volunteers 1, 2, 3 and 4 were used to test the ellipse model. However, the resul
 	\label{tab:ovalLower}%
 \end{table}%
 
-As seen in Table \ref{tab:ovalUpper} and Table \ref{tab:ovalLower}, the ellipse model was not successful in 
+As seen in Table \ref{tab:ovalUpper} and Table \ref{tab:ovalLower}, the ellipse model was not successful in approximating the 3D circumference of the various limbs. All of the average accuracies calculated were above 60\% and the worst performing measurement being the "Waist" with an average accuracy of 148.70\%. Clearly, the aim of modelling the circumferences with an average accuracy of within 30\% was not achieved. 
 
 \subsection{Rectangle Model}
 Table \ref{tab:rectUpper} and Table \ref{tab:rectLower} are summaries of the average accuracy of using the ellipse model to the various upper and lower body limbs.
@@ -641,9 +641,65 @@ Volunteers 5, 6, and 7 were used to test the rectangle model.
 	\label{tab:rectLower}%
 \end{table}%
 
+As seen in Table \ref{tab:rectUpper} and Table \ref{tab:rectLower}, the rectangle model was more successful than the ellipse model in approximating the 3D circumference of the various limbs. All of the average accuracies calculated were below 50\%, thus outperforming the ellipse model for every limb.
+
+However, the rectangle model still did not completely meet the aim of modelling the circumferences with an average accuracy of within 30\%. Only the "Lower Left Arm" and "Lower Right Arm" had average modelling accuracies within this range (27.40\% and 18.89\% respectively). The "Upper Left Arm", "Upper Right Arm" and "Lower Right Leg" closely missed this target with accuracies of 30.79\%, 32.72\% and 30.51\% respectively.
+
+Additionally, it seemed that on average, the lower body limb modelling performed worse than the upper body limb modelling.    was not achieved. The worst performing upper body modelling was the "Chest" with an average accuracy of 48.13\%. On the lower body side, the "Lower Left Leg" performed the worst with an average accuracy of 49.28\%.
 
 \section{User Interface Observations} \label{UIObservations}
+This section details observations made about the user interface of the system during final testing. 
 
-9) Improved UI - trying to determine perfect pose
-10) Data Set Analysis\\
+\subsection{Measurement Processing} \label{measurementProcess}
+As mentioned in Section \hl{(Insert Reference)}, in order to take a measurement of a person standing in front of the Kinect, another person operating the system would need to press the "Measure" button.
+
+Once the button is pressed, a colour image of the person with their skeleton and all relevant measurement planes is shown. Concurrently, all available measurements populate the measurement panel. 
+
+However, during final testing, an issue with this method of measurement processing was detected. In order to limit the empirical errors detailed in Section \ref{empiricalObservations}, the operator would have to look at the image obtained and advise the measured person on how to adjust their body for maximum results. The most frequent examples of this were:
+
+\begin{enumerate}
+	\item An overlap error occurred - The operator would need to instruct the measured person how to orientate his/her body to remove the overlap
+	\item A trailing limb was detected - The operator would retake the measurement while the measured person is completely stationary
+	\item The skeleton was not detected (Specifically in "Left", "Right" or "Back" view) - The operator would ask the measured person to move until their skeleton was tracked 
+\end{enumerate}
+
+This manual "feedback loop" of image evaluation on the operator side and position correction on the measured person's side, to mitigate observed errors, meant that often multiple measurements would have to be taken before an "ideal one" surfaced. Each measurement would involve waiting for a measurement to be ready, pressing the button, waiting for the measurement to process and then evaluating the result. This repetitive action would sometimes be time consuming and tedious for both the operator and person being measured.  As such, the aim of the interface being easy to use and autonomous was not achieved in this instance. 
+
+\subsection{View Selection}
+To process a measurement in each view, the operator would first has to select the appropriate view in the radio button group in the UI and then complete the process mentioned in Section \hl{(Insert Reference)} to record the measurement for that view. 
+
+The issue observed with this is that it relies on the operator to always select the correct view. There exists no view validation system that protects against the operator accidentally selecting the incorrect view or forgetting to select the new view before taking a new measurement. 
+
+For example, when testing the system on Volunteer 1, after the "Front" measurement was completed, the operator forgot to select the "Left" option before taking the "Left" measurement. As a result, the "Front" measurement was incorrectly overwritten and the circumference readings were unusable.
+
+Therefore, the aim of the system being robust against user mistakes was not realised in this instance.
+
+\subsection{User Guidance}
+The operator is given the following signals during the operation of the process:
+\begin{itemize}
+	\item [Status Bar]
+	\item Start up message when the program is initialised
+	\item Message when a measurement is complete
+	\item Message when a new view is selected
+	\item Message when a new view can be taken
+	\item [Buttons]
+	\item Measurement Button
+	\item Results Button that appears when all measurements are taken
+	\item [Results]
+	\item Image shown when measurement complete
+	\item Measurement panel populated when measurement complete
+	\item Results pop up window shown when results button pressed
+\end{itemize}
+
+The following observations were made about this guidance:
+\begin{itemize}
+	\item [Status Bar]
+	\item Messages seemed to small and not easily noticeable
+	\item "Measurement complete" message lasted for such a short time that it was often missed (Replaced by "new measurement available" message)
+	\item [Pop Up Windows]
+	\item This seemed to be the best method in getting attention from user
+	\item [Overall]
+	\item Little to no guidance was given regarding the quality of the measurement
+\end{itemize}
+
 

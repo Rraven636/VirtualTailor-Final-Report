@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.25)  3 NOV 2017 21:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.25)  7 NOV 2017 00:24
 entering extended mode
 **"./Final Report.tex"
 ("Final Report.tex"
@@ -448,8 +448,20 @@ Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \TX@cols=\count127
 \TX@ftn=\toks32
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\soul\soul.sty"
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks33
+\SOUL@lasttoken=\toks34
+\SOUL@cmds=\toks35
+\SOUL@buffer=\toks36
+\SOUL@token=\toks37
+\SOUL@spaceskip=\skip72
+\SOUL@ttwidth=\dimen159
+\SOUL@uldp=\dimen160
+\SOUL@ulht=\dimen161
+)
 
-Package array Warning: Column V is already defined on input line 34.
+Package array Warning: Column V is already defined on input line 36.
 
 ("Final Report.aux" (Introduction.aux) (Literature.aux) (BackgroundInfo.aux)
 (Design.aux) (Methodology.aux) (Results.aux) (Analysis.aux) (Discussion.aux)
@@ -457,20 +469,20 @@ Package array Warning: Column V is already defined on input line 34.
 (appendixb.aux))
 \openout1 = `"Final Report.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -509,16 +521,16 @@ LaTeX Font Info:    ... okay on input line 45.
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count128
-\scratchdimen=\dimen159
+\scratchdimen=\dimen162
 \scratchbox=\box31
 \nofMPsegments=\count129
 \nofMParguments=\count130
-\everyMPshowfont=\toks33
+\everyMPshowfont=\toks38
 \MPscratchCnt=\count131
-\MPscratchDim=\dimen160
+\MPscratchDim=\dimen163
 \MPnumerator=\count132
 \makeMPintoPDFobject=\count133
-\everyMPtoPDFconversion=\toks34
+\everyMPtoPDFconversion=\toks39
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -534,9 +546,9 @@ G,.JBIG2,.JB2,.eps]
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 45.
+(lastpage)             ! on input line 47.
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 45.
+Package hyperref Info: Link coloring OFF on input line 47.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -546,44 +558,44 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count134
 )
-LaTeX Info: Redefining \ref on input line 45.
-LaTeX Info: Redefining \pageref on input line 45.
-LaTeX Info: Redefining \nameref on input line 45.
+LaTeX Info: Redefining \ref on input line 47.
+LaTeX Info: Redefining \pageref on input line 47.
+LaTeX Info: Redefining \nameref on input line 47.
 
 ("Final Report.out") ("Final Report.out")
 \@outlinefile=\write3
 \openout3 = `"Final Report.out"'.
 
 
-<uctLogo.png, id=135, 418.56375pt x 425.59pt>
+<uctLogo.png, id=159, 418.56375pt x 425.59pt>
 File: uctLogo.png Graphic file (type png)
  <use uctLogo.png>
-Package pdftex.def Info: uctLogo.png used on input line 59.
+Package pdftex.def Info: uctLogo.png used on input line 61.
 (pdftex.def)             Requested size: 125.57008pt x 127.67798pt.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./uctLogo.png>] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 176--176
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 176--176
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
 
  []
 
 [1]
-Underfull \hbox (badness 10000) in paragraph at lines 176--176
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 176.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 178.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 176.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 178.
  [2] ("Final Report.toc"
 LaTeX Font Info:    Try loading font information for U+msa on input line 2.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
@@ -595,18 +607,18 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [3
 
-])
+] [4])
 \tf@toc=\write4
 \openout4 = `"Final Report.toc"'.
 
- [4] [5]
+ [5]
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 176.
+less on input line 178.
 
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 176.
+less on input line 178.
 
 \openout2 = `Introduction.aux'.
 
@@ -637,7 +649,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.176 }
+l.178 }
         [2]
 \openout2 = `Literature.aux'.
 
@@ -652,7 +664,7 @@ l.29 	\item G
 
 
 
-] <model.png, id=238, 650.43pt x 396.48125pt>
+] <model.png, id=268, 650.43pt x 396.48125pt>
 File: model.png Graphic file (type png)
 
 <use model.png>
@@ -670,7 +682,7 @@ ld be short
  (BackgroundInfo.tex
 Chapter 3.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 3--176
+Underfull \hbox (badness 10000) in paragraph at lines 3--178
 
  []
 
@@ -697,499 +709,168 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--13
 
  (Methodology.tex
 Chapter 5.
-) [9
+[9
 
 
 
 ]
+Overfull \hbox (1.71762pt too wide) in paragraph at lines 34--35
+[]\OT1/cmr/m/n/12 Each measurement "view" should perform within an average accu
+racy tolerance
+ []
+
+) [10]
 \openout2 = `Results.aux'.
 
  (Results.tex
 Chapter 6.
 
-Overfull \hbox (5.21207pt too wide) in paragraph at lines 4--5
-[]\OT1/cmr/m/n/12 This section begins with a presentation of the overall result
-s of the system and a comparison
+Overfull \hbox (5.21207pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/12 This section begins with a presentation of the overall results 
+of the system and a comparison
  []
 
-[10
+[11
 
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+] [12] [13] [14] [15] [16]
+<FreqDistUncertainties.png, id=380, 296.307pt x 196.3335pt>
+File: FreqDistUncertainties.png Graphic file (type png)
 
+<use FreqDistUncertainties.png>
+Package pdftex.def Info: FreqDistUncertainties.png used on input line 317.
+(pdftex.def)             Requested size: 317.07614pt x 210.1107pt.
+ [17] [18]
+Overfull \hbox (5.82132pt too wide) in paragraph at lines 372--373
+\OT1/cmr/m/n/12 system during its use. These observations are explained in each
+ of the following subsections: 
  []
 
-[11] [12] [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
 
+Overfull \hbox (3.76765pt too wide) in paragraph at lines 375--376
+\OT1/cmr/m/n/12 There were instances where the Background Removal functionality
+ of the Kinect performed
  []
 
+<ErrorExample_Blurred.png, id=403, 642.4pt x 481.8pt>
+File: ErrorExample_Blurred.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
+<use ErrorExample_Blurred.png>
+Package pdftex.def Info: ErrorExample_Blurred.png used on input line 384.
+(pdftex.def)             Requested size: 317.07614pt x 237.81169pt.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 253--255
-
- []
-
-
-Overfull \hbox (0.69742pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 Chest| 
- []
-
-
-Overfull \hbox (0.69325pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 Waist| 
- []
-
-
-Overfull \hbox (3.23906pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 Upper
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-\OT1/cmr/m/n/12 Left
- []
-
-
-Overfull \hbox (2.0988pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 Lower
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-\OT1/cmr/m/n/12 Left
- []
-
-
-Overfull \hbox (3.23906pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 Upper
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-\OT1/cmr/m/n/12 Right
- []
-
-
-Overfull \hbox (2.0988pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 Lower
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-\OT1/cmr/m/n/12 Right
- []
-
-
-Overfull \hbox (3.23906pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 Upper
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-\OT1/cmr/m/n/12 Left
- []
-
-
-Overfull \hbox (2.0988pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 Lower
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-\OT1/cmr/m/n/12 Left
- []
-
-
-Overfull \hbox (3.23906pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 Upper
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-\OT1/cmr/m/n/12 Right
- []
-
-
-Overfull \hbox (2.0988pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 Lower
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-\OT1/cmr/m/n/12 Right
- []
-
-
-Overfull \hbox (1.93768pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 2.42%| 
- []
-
-
-Overfull \hbox (7.81262pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 23.45%| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 -
- []
-
-
-Overfull \hbox (7.81262pt too wide) in paragraph at lines 292--292
-\OT1/cmr/m/n/12 30.70%| 
- []
-
-
-Overfull \hbox (1.93768pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 3.11%| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 -
- []
-
-
-Overfull \hbox (7.81262pt too wide) in paragraph at lines 292--292
-\OT1/cmr/m/n/12 40.92%| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 -
- []
-
-
-Overfull \hbox (1.93768pt too wide) in paragraph at lines 292--292
-\OT1/cmr/m/n/12 3.07%| 
- []
-
-
-Overfull \hbox (7.81262pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 59.48%| 
- []
-
-
-Overfull \hbox (7.81262pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 19.52%| 
- []
-
-
-Overfull \hbox (7.81262pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 57.29%| 
- []
-
-
-Overfull \hbox (7.81262pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 14.48%| 
- []
-
-
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
-
-
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
-
-
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
-
-
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
-
-
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
+<Uncertainty_Left4.png, id=404, 566.71725pt x 544.434pt>
+File: Uncertainty_Left4.png Graphic file (type png)
 
+<use Uncertainty_Left4.png>
+Package pdftex.def Info: Uncertainty_Left4.png used on input line 396.
+(pdftex.def)             Requested size: 317.07614pt x 304.62343pt.
 
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
-
-
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
-
-
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
-
-
-Overfull \hbox (7.81262pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 43.65%| 
- []
-
-
-Overfull \hbox (7.81262pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 55.90%| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 -
- []
-
-
-Overfull \hbox (7.81262pt too wide) in paragraph at lines 292--292
-\OT1/cmr/m/n/12 32.82%| 
- []
-
-
-Overfull \hbox (7.81262pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 16.40%| 
- []
-
-
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
-
-
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
-
-
-Overfull \hbox (7.81262pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 38.28%| 
- []
-
-
-Overfull \hbox (1.93768pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 9.13%| 
- []
-
-
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
-
-
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
-
-
-Overfull \hbox (13.68756pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 129.63%| 
- []
-
-
-Overfull \hbox (7.81262pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 15.27%| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 -
- []
-
-
-Overfull \hbox (7.81262pt too wide) in paragraph at lines 292--292
-\OT1/cmr/m/n/12 26.18%| 
- []
-
-
-Overfull \hbox (7.81262pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 10.80%| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 -
- []
-
-
-Overfull \hbox (7.81262pt too wide) in paragraph at lines 292--292
-\OT1/cmr/m/n/12 31.48%| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 -
- []
-
-
-Overfull \hbox (7.81262pt too wide) in paragraph at lines 292--292
-\OT1/cmr/m/n/12 22.42%| 
- []
-
-
-Overfull \hbox (7.81262pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 49.20%| 
- []
-
-
-Overfull \hbox (7.81262pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 12.09%| 
- []
-
-
-Overfull \hbox (7.81262pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 62.34%| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 -
- []
-
-
-Overfull \hbox (1.93768pt too wide) in paragraph at lines 292--292
-\OT1/cmr/m/n/12 3.91%| 
- []
-
-
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
-
-
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
-
-
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
-
-
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
+<Volunteer7_Back.png, id=405, 568.524pt x 545.03625pt>
+File: Volunteer7_Back.png Graphic file (type png)
 
+<use Volunteer7_Back.png>
+Package pdftex.def Info: Volunteer7_Back.png used on input line 408.
+(pdftex.def)             Requested size: 317.07614pt x 303.98737pt.
 
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
-
-
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
-
-
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
-
-
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
-
-
-Overfull \hbox (7.81262pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 22.29%| 
- []
-
-
-Overfull \hbox (7.81262pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 33.73%| 
- []
+<Volunteer1_Back.png, id=406, 566.71725pt x 544.434pt>
+File: Volunteer1_Back.png Graphic file (type png)
 
+<use Volunteer1_Back.png>
+Package pdftex.def Info: Volunteer1_Back.png used on input line 420.
+(pdftex.def)             Requested size: 317.07614pt x 304.62343pt.
+ [19 <./FreqDistUncertainties.png>] [20 <./ErrorExample_Blurred.png>] [21 <./Un
+certainty_Left4.png>]
+<Volunteer1_Right.png, id=437, 566.115pt x 543.2295pt>
+File: Volunteer1_Right.png Graphic file (type png)
 
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
-
-
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 -
- []
-
+<use Volunteer1_Right.png>
+Package pdftex.def Info: Volunteer1_Right.png used on input line 453.
+(pdftex.def)             Requested size: 317.07614pt x 304.26447pt.
+ [22 <./Volunteer7_Back.png>]
+<Volunteer3_Back.png, id=448, 565.51276pt x 540.8205pt>
+File: Volunteer3_Back.png Graphic file (type png)
 
-Overfull \hbox (1.93768pt too wide) in paragraph at lines 292--292
-\OT1/cmr/m/n/12 6.67%| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 -
- []
+<use Volunteer3_Back.png>
+Package pdftex.def Info: Volunteer3_Back.png used on input line 477.
+(pdftex.def)             Requested size: 317.07614pt x 303.23701pt.
 
+<Volunteer3_Right.png, id=449, 566.115pt x 543.2295pt>
+File: Volunteer3_Right.png Graphic file (type png)
 
-Overfull \hbox (1.93768pt too wide) in paragraph at lines 292--292
-\OT1/cmr/m/n/12 7.58%| 
- []
+<use Volunteer3_Right.png>
+Package pdftex.def Info: Volunteer3_Right.png used on input line 489.
+(pdftex.def)             Requested size: 317.07614pt x 304.26447pt.
 
+<Volunteer4_Back.png, id=450, 564.9105pt x 545.03625pt>
+File: Volunteer4_Back.png Graphic file (type png)
 
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
+<use Volunteer4_Back.png>
+Package pdftex.def Info: Volunteer4_Back.png used on input line 501.
+(pdftex.def)             Requested size: 317.07614pt x 305.91681pt.
 
+<Volunteer4_Left.png, id=451, 567.3195pt x 543.83176pt>
+File: Volunteer4_Left.png Graphic file (type png)
 
-Overfull \hbox (4.54044pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 #N/A| 
- []
+<use Volunteer4_Left.png>
+Package pdftex.def Info: Volunteer4_Left.png used on input line 513.
+(pdftex.def)             Requested size: 317.07614pt x 303.94623pt.
+ [23 <./Volunteer1_Back.png>]
+<WaistPlaneError.png, id=469, 1151.502pt x 548.0475pt>
+File: WaistPlaneError.png Graphic file (type png)
 
+<use WaistPlaneError.png>
+Package pdftex.def Info: WaistPlaneError.png used on input line 532.
+(pdftex.def)             Requested size: 317.07614pt x 150.91003pt.
 
-Overfull \hbox (1.93768pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 2.24%| 
- []
+<Volunteer2_Left.png, id=470, 564.9105pt x 548.0475pt>
+File: Volunteer2_Left.png Graphic file (type png)
 
+<use Volunteer2_Left.png>
+Package pdftex.def Info: Volunteer2_Left.png used on input line 544.
+(pdftex.def)             Requested size: 317.07614pt x 307.60695pt.
+ [24 <./Volunteer1_Right.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 556--558
 
-Overfull \hbox (13.68756pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/12 113.74%| 
  []
 
-) [15] [16]
+) [25 <./Volunteer3_Back.png>] [26 <./Volunteer3_Right.png>] [27 <./Volunteer4_
+Back.png>] [28 <./Volunteer4_Left.png> <./WaistPlaneError.png>] [29 <./Voluntee
+r2_Left.png>]
 \openout2 = `Analysis.aux'.
 
  (Analysis.tex
 Chapter 7.
 
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 13.
+(hyperref)                than one, level fixed on input line 17.
 
-) [17
+[30
 
 
 
-] [18]
+]
+Underfull \hbox (badness 10000) in paragraph at lines 33--36
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 37--178
+
+ []
+
+[31]
 \openout2 = `Discussion.aux'.
 
  (Discussion.tex
 Chapter 8.
-) [19
+) [32
 
 
 
@@ -1198,7 +879,7 @@ Chapter 8.
 
  (Conclusions.tex
 Chapter 9.
-) [20
+) [33
 
 
 
@@ -1207,67 +888,489 @@ Chapter 9.
 
  (Recommendations.tex
 Chapter 10.
-) [21
+) [34
 
 
 
 ]
 \openout2 = `References.aux'.
 
- (References.tex [22
+ (References.tex [35
 
 
-]) [23
+]) [36
 
 ]
 \openout2 = `appendixa.aux'.
 
  (appendixa.tex
 Appendix A.
-) [24
+
+Overfull \hbox (0.69742pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 Chest| 
+ []
+
+
+Overfull \hbox (0.69325pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 Waist| 
+ []
+
+
+Overfull \hbox (3.23906pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 Upper
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\OT1/cmr/m/n/12 Left
+ []
+
+
+Overfull \hbox (2.0988pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 Lower
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\OT1/cmr/m/n/12 Left
+ []
+
+
+Overfull \hbox (3.23906pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 Upper
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\OT1/cmr/m/n/12 Right
+ []
+
+
+Overfull \hbox (2.0988pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 Lower
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\OT1/cmr/m/n/12 Right
+ []
+
+
+Overfull \hbox (3.23906pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 Upper
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\OT1/cmr/m/n/12 Left
+ []
+
+
+Overfull \hbox (2.0988pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 Lower
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\OT1/cmr/m/n/12 Left
+ []
+
+
+Overfull \hbox (3.23906pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 Upper
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\OT1/cmr/m/n/12 Right
+ []
+
+
+Overfull \hbox (2.0988pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 Lower
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\OT1/cmr/m/n/12 Right
+ []
+
+
+Overfull \hbox (1.93768pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 2.42%| 
+ []
+
+
+Overfull \hbox (7.81262pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 23.45%| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 -
+ []
+
+
+Overfull \hbox (7.81262pt too wide) in paragraph at lines 41--41
+\OT1/cmr/m/n/12 30.70%| 
+ []
+
+
+Overfull \hbox (1.93768pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 3.11%| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 -
+ []
+
+
+Overfull \hbox (7.81262pt too wide) in paragraph at lines 41--41
+\OT1/cmr/m/n/12 40.92%| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 -
+ []
+
+
+Overfull \hbox (1.93768pt too wide) in paragraph at lines 41--41
+\OT1/cmr/m/n/12 3.07%| 
+ []
+
+
+Overfull \hbox (7.81262pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 59.48%| 
+ []
+
+
+Overfull \hbox (7.81262pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 19.52%| 
+ []
+
+
+Overfull \hbox (7.81262pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 57.29%| 
+ []
+
+
+Overfull \hbox (7.81262pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 14.48%| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (7.81262pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 43.65%| 
+ []
+
+
+Overfull \hbox (7.81262pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 55.90%| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 -
+ []
+
+
+Overfull \hbox (7.81262pt too wide) in paragraph at lines 41--41
+\OT1/cmr/m/n/12 32.82%| 
+ []
+
+
+Overfull \hbox (7.81262pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 16.40%| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (7.81262pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 38.28%| 
+ []
+
+
+Overfull \hbox (1.93768pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 9.13%| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (13.68756pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 129.63%| 
+ []
+
+
+Overfull \hbox (7.81262pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 15.27%| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 -
+ []
+
+
+Overfull \hbox (7.81262pt too wide) in paragraph at lines 41--41
+\OT1/cmr/m/n/12 26.18%| 
+ []
+
+
+Overfull \hbox (7.81262pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 10.80%| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 -
+ []
+
+
+Overfull \hbox (7.81262pt too wide) in paragraph at lines 41--41
+\OT1/cmr/m/n/12 31.48%| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 -
+ []
+
+
+Overfull \hbox (7.81262pt too wide) in paragraph at lines 41--41
+\OT1/cmr/m/n/12 22.42%| 
+ []
+
+
+Overfull \hbox (7.81262pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 49.20%| 
+ []
+
+
+Overfull \hbox (7.81262pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 12.09%| 
+ []
+
+
+Overfull \hbox (7.81262pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 62.34%| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 -
+ []
+
+
+Overfull \hbox (1.93768pt too wide) in paragraph at lines 41--41
+\OT1/cmr/m/n/12 3.91%| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (7.81262pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 22.29%| 
+ []
+
+
+Overfull \hbox (7.81262pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 33.73%| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 -
+ []
+
+
+Overfull \hbox (1.93768pt too wide) in paragraph at lines 41--41
+\OT1/cmr/m/n/12 6.67%| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 -
+ []
+
+
+Overfull \hbox (1.93768pt too wide) in paragraph at lines 41--41
+\OT1/cmr/m/n/12 7.58%| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (4.54044pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 #N/A| 
+ []
+
+
+Overfull \hbox (1.93768pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 2.24%| 
+ []
+
+
+Overfull \hbox (13.68756pt too wide) in paragraph at lines 41--41
+[]|\OT1/cmr/m/n/12 113.74%| 
+ []
+
+) [37
 
 
 
-]
+] [38]
 \openout2 = `appendixb.aux'.
 
  (appendixb.tex
 Appendix B.
-) [25
+) [39
 
 
 
 ] 
 AED: lastpage setting LastPage
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 179.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
 ("Final Report.aux" (Introduction.aux) (Literature.aux) (BackgroundInfo.aux)
 (Design.aux) (Methodology.aux) (Results.aux) (Analysis.aux) (Discussion.aux)
 (Conclusions.aux) (Recommendations.aux) (References.aux) (appendixa.aux)
 (appendixb.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 179.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 179.
 Package rerunfilecheck Info: File `"Final Report".out' has not changed.
-(rerunfilecheck)             Checksum: 761A2C9F389E020605C3A2BA016086A8;2046.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 177.
+(rerunfilecheck)             Checksum: DA5C0EBC712F47A6267D5C876652CF00;2497.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 179.
  ) 
 Here is how much of TeX's memory you used:
- 8656 strings out of 493323
- 123048 string characters out of 3139062
- 278992 words of memory out of 3000000
- 11839 multiletter control sequences out of 15000+200000
- 11115 words of font info for 41 fonts, out of 3000000 for 9000
+ 8972 strings out of 493323
+ 127632 string characters out of 3139062
+ 273407 words of memory out of 3000000
+ 12075 multiletter control sequences out of 15000+200000
+ 11428 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,12n,43p,453b,505s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,12n,43p,695b,522s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmti12.pfb>
-Output written on "Final Report.pdf" (33 pages, 318661 bytes).
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmti12.pfb>
+Output written on "Final Report.pdf" (47 pages, 1330054 bytes).
 PDF statistics:
- 405 PDF objects out of 1000 (max. 8388607)
- 101 named destinations out of 1000 (max. 500000)
- 275 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 612 PDF objects out of 1000 (max. 8388607)
+ 164 named destinations out of 1000 (max. 500000)
+ 383 words of extra memory for PDF output out of 10000 (max. 10000000)
 

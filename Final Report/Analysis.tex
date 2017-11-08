@@ -35,14 +35,14 @@ Below is a summary of performance in comparison with the quantitative aims:
 
 Despite using a relatively small data set, the system was deemed to be effective for a variety of body types - The characteristics of Volunteers used for analysis included "Build", "Height" and "Clothing". (A summary of this can be seen in Table \ref{tab:overallAccuracy}). However, it was noticed that certain characteristics may have been responsible for the systems lack of performance in certain areas and will be explained in subsequent sections.
 
-Additionally, the physical measurements taken for comparison had a great deal of uncertainty as the apparatus available for measurement was analogue and not perfectly suited for the the experiment. 
+Additionally, the physical measurements taken for comparison had a certain amount of uncertainty as the apparatus available for measurement was analogue and not perfectly suited for the the experiment. Therefore, the results of the system could be slightly better or worse. 
 
 \subsection{Body Detection}
 The first major aspect of the system is whether it could adequately detect a human body. As mention in Section \hl{(Insert Reference)}, this was achieved by using the Kinect's inbuilt skeleton tracking capability together with its BackgroundRemoval Class.
 
 The visible effectiveness of this method manifested in the detection of the full human body of each volunteer, together with a rendering of their skeleton, that appeared in the User Interface. (Refer to Appendix \ref{appendixDetailedResults} for examples of images taken during final testing). 
 
-The next process in the detection process was to understand if the depth data collected by the Kinect was reliable for 3D measurement. This has been validated by previous projects \hl{(Insert Reference)}, but the measurement of key lengths in the body, performed during this project, also acted as an indirect "acid-test" validation. This is largely due to the fact that the points used to measure the lengths were well established "Joints" in the tracked "Skeleton", where each "Joint" had a clearly identifiable 3D location. Therefore, comparing the measurements obtained through calculation to actual measurements was able to give a rough indication of the accuracy of the Kinect's data. Since all the key lengths had an average accuracy of within 10\% was also indirectly performed during this project.  first step in 
+The next process in the detection process was to understand if the depth data collected by the Kinect was reliable for 3D measurement. This has been validated by previous projects \hl{(Insert Reference)}, but the measurement of key lengths in the body, performed during this project, also acted as an indirect "acid-test" validation. This is largely due to the fact that the points used to measure the lengths were well established "Joints" in the tracked "Skeleton", where each "Joint" had a clearly identifiable 3D location. Therefore, comparing the measurements obtained through calculation to actual measurements was able to give a rough indication of the accuracy of the Kinect's data. Since all the key lengths had an average accuracy of within 10\%, this was also indirectly performed during this project.  first step in 
 
 Detecting Users\\
 Skeleton tracking - Jitter, Inferred Joints, Ideal for Front, mapping to colour image - Skinny\\

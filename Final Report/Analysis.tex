@@ -85,6 +85,28 @@ This meant that the skeleton was mapped to the "background removed" part of the 
 
 
 \subsection{Extremity Detection}
+As seen from the overall performance summary above, the system performed relatively well in detecting extremities of the body. As seen in Section \hl{(Insert Reference)}, the detection of extremities combined the ability of the Kinect's internal BackgroundRemoval Class, together with an algorithm that also took depth data into account.  
+
+However, there were certain cases mentioned in Chapter \ref{results}, where the extremity detection failed or was erroneous. The major contributing factors to this are explored in the following subsections:
+
+\subsubsection{Clothing}
+As mentioned in Section \hl{(Insert Reference)}, clothing worn by the volunteer was expected to have an effect on the system's performance. 
+
+However, what was not expected was the dramatic impact it would have on the results. On average, clothing worsened the accuracy of the results by 66.08\%. This shows that the system is clearly not designed to be robust against clothing worn by the volunteers.
+
+Fortunately, this can be compensated for by ensuring the person being measured wears either tight clothing or is wearing as little clothing as possible. However, in a fully implementable solution, more work should be done in including this compensation for clothing algorithmically. Possible methods are explained in Section \hl{(Insert Reference)}. 
+
+\subsubsection{Padding}
+This addition of pixels around the body (Introduced in Section \ref{empiricalObservations}), was responsible for increased inaccuracy in measurements of various limbs. 
+
+In most cases, the "Padding" caused the measurements to be inflated. The part of the algorithm created to compensate for this, effectively detects stray pixels that form part of the background that are too far from the body. The reason why it was also not excluded by the algorithm is because these pixels have approximately the same depth from the camera as the body. As a result, the BackgroundRemoval Class includes them, and the algorithm cannot differentiate between them and the body. 
+
+\subsubsection{Overlap}
+The 
+
+\subsubsection{Kinect Accuracy}
+
+
 Padding\\
 Clothing\\
 Overlap - Orientation or position\\

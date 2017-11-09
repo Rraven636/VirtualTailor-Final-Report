@@ -94,7 +94,7 @@ As mentioned in Section \hl{(Insert Reference)}, clothing worn by the volunteer 
 
 However, what was not expected was the dramatic impact it would have on the results. On average, clothing worsened the accuracy of the results by 66.08\%. This shows that the system is clearly not designed to be robust against clothing worn by the volunteers.
 
-Fortunately, this can be compensated for by ensuring the person being measured wears either tight clothing or is wearing as little clothing as possible. However, in a fully implementable solution, more work should be done in including this compensation for clothing algorithmically. Possible methods are explained in Section \hl{(Insert Reference)}. 
+Fortunately, this can be compensated for by ensuring the person being measured wears either tight clothing or is wearing as little clothing as possible. However, in a fully implementable solution, more work should be done in including this compensation for clothing algorithmically. Possible methods are explained in Chapter \ref{recommendations}. 
 
 \subsubsection{Padding}
 This addition of pixels around the body (Introduced in Section \ref{empiricalObservations}), was responsible for increased inaccuracy in measurements of various limbs. 
@@ -102,62 +102,101 @@ This addition of pixels around the body (Introduced in Section \ref{empiricalObs
 In most cases, the "Padding" caused the measurements to be inflated. The part of the algorithm created to compensate for this, effectively detects stray pixels that form part of the background that are too far from the body. The reason why it was also not excluded by the algorithm is because these pixels have approximately the same depth from the camera as the body. As a result, the BackgroundRemoval Class includes them, and the algorithm cannot differentiate between them and the body. 
 
 \subsubsection{Overlap}
-The 
+The "Overlap" error was also a major contributor to inaccuracies. The system was unable to detect an overlap in the same way it could not detect extra padding - The overlap of two body parts meant that a continuous measurement line was created over both body parts as the expected removed background was not reached (Explained in section \ref{empiricalObservations}). 
+
+Additionally, the depth analysis part of the algorithm could not differentiate between the body parts as their average depth is too close. There were no other means to differentiate edges and such, this error would occasionally occur.
+
+To compensate for this, the person being measured can be instructed to hold a specific position that limits the presence of overlap errors. However, this has impacts on the usability of the system and is covered in Section \ref{UIAnalysis}. Also, this does not always work as is the case with the "Left" and "Right" views. Besides the "Waist Plane" error mentioned above, overlap errors were a major contributor to the inaccuracies of these views. 
 
 \subsubsection{Kinect Accuracy}
+The resolution and range limitation of the Kinect has an impact on the accuracy of extremity determination. (The person being detecting having to be a certain distance away from the sensor and the depth data not having a high enough resolution to provide very precise and accurate data). This manifests itself in two predominate manners:
 
+\paragraph{Data Collection} 
+The low resolution of the depth sensor means the data collected about the exact position of the person has a certain level of uncertainty. Additionally, for finer measurements such as the precise measurements of the extremities, the lack of precise positional data causes error propagation throughout the system.
 
-Padding\\
-Clothing\\
-Overlap - Orientation or position\\
-Resolution\\
-Distance\\
+\paragraph{Errors}
+The low resolution is also a contributor for many of the errors mentioned in Section \ref{empiricalObservations}. For example, the low resolution means the system has to be less sensitive to depth data. This makes it more difficult to differentiate between body parts (Overlap) and the background (Padding). Additionally, the depth data is prone to noise and contributes to errors in skeleton mapping, background removal and the part of the algorithm that analyses depth data. 
+
 
 \subsection{Measurement Validity}
-Uncertainty\\
-Stats\\
-Waist Plane\\
+
+\subsubsection{Uncertainty}
+As seen above, the average uncertainty of the measurements of the all individual limbs was less than 10\%. In fact, even all the individual uncertainties measured in the different views were also less than 10\%. 
+
+This means that the system is relatively precise and there is minimal variation between multiple readings of a person in the same position. (I.e. a measurement obtained is reliable). That being said, the system currently only takes one reading of a person in each respective view (4 readings in total). Instead, multiple readings could be taken in each view and then aggregated to provide an even more reliable results. This is explored in Chapter \ref{recommendations}. 
+
+However, the uncertainty may be slightly worse than the values calculated, as the volunteer used to measure the uncertainty was instructed to hold specific positions by the operator. These positions were selected to removed errors such as "Overlap" or the "Incorrect Waist Plane" error. Therefore, without the intervention of the operator, these uncertainty values may be higher. To implement a multiple reading system mentioned in the paragraph above, more stringent error checking must first be employed algorithmically. 
+
+\subsubsection{Error Checking} 
+At present, the only method of error checking is the operator validating whether a measurement is accurate enough or not (This "manual feedback loop" is explained in Section \ref{measurementProcess}). 
+
+The problem with this method is that it requires a lot of effort on the part of the operator together with specific knowledge of errors for which to look. Additionally, the operator may be able to pick up obvious errors such as large overlaps or a waist plane with significant deviation. However, due to the large amount of information, it would be easy to miss small errors such as small overlaps, slight deviations in the waist plane and/or missing limb measurements. 
+
+For an implementable solution, the load on the operator should be reduced and more error checking and validation should be done algorithmically. This will move towards a more autonomous solution, with less reliance on the operator and improve the accuracy of readings. 
 
 \section{3D Modelling}
 
-\section{User Interface}
+\subsection{Overall}
+An effective implementation of 3D circumference modelling from the extremities and lengths determined, was not successfully achieved. 
 
-\iffalse
+Below is a summary of the performance of the two models used in comparison with the quantitative aims:
 
-Mention data set?\\
+\begin{itemize}
+	\item The average accuracy tolerance of the ellipse model was 106.82\% - (Aim: $<30\%$)
+	\item The average accuracy tolerance of the rectangle model was 35.80\% - (Aim: $<30\%$)
+\end{itemize}
 
-The observed factors that had the greatest contribution to inaccuracy are listed below in order of impact:
+It is clear that neither of the models performed within the aim of 30\%. However, the rectangle model came very close with an average accuracy of 35.80\%. This result was not expected as it was originally theorized that the ellipse model would yield better results. 
 
-\begin{enumerate}
-	\item The system not being able to accurately determine the extremities of the body.
-	\item The inconsistency of the plane being used to take the measurement.
-	\item The error or "jitter" of the tracked skeleton.
-\end{enumerate}
+It should also be noted however, that errors made during the extremity measurements, would propagate through the system and impact the circumference. Additionally, factors such as the presence of clothing would also greatly impact the result. Therefore, if these measurements were improved, this would also result in an improvement in the accuracy of the models.   
 
+Further analysis of each individual model is presented below:  
 
+\subsection{Ellipse Model}
+The ellipse model performed much worse than expected. The accuracy values for the different limbs ranged from 60.06\% to 148.70\%. 
 
-The results obtained in Table \ref{tab:viewResults}, together with the detailed results of each volunteer available in Appendix \ref{appendixDetailedResults} have yielded insights for each of the views. They are discussed in the subsequent subsections. 
+This wide spread of accuracies and large deviation from the actual circumference measurements indicates that the ellipse is not a suitable shape to model the 3D circumference of body parts in this application.
 
-\subsection{Front Performance}
+Closer inspection of the measurements of the volunteers obtained together with empirical observations revealed that human limbs are often more elongated and less ovular. 
 
-The "Front" view performed the best overall with an average accuracy of 20.67\%. This can be attributed to the fact that the Kinect performs the best when a person faces it head on (Parallel to the image plane). This is due to the Kinect being able to fully track the skeleton of the user. As a result, a more accurate and reliable skeletal coordinate system can be used, which in turn provide more accurate planes of measure. 
+Additionally, the ellipse perimeter is modelled using the length of its minor and major axes. The algorithm was built on the assumption that the $90^{\circ}$ rotation in between each measurement would adequately provide measurements for the two axes. However, further analysis of the system revealed that the measurements obtained often did not correspond to the major and minor axes. Instead, they would correspond to diameters or chords slightly off either axis, due to factors such as the slight rotation of the arm during measurement. Frequently, this error in modelling was exacerbated by the algorithm because the minor axis was often given a value that was too big. As a result, the shape being modelled was more along the lines of a circle with a diameter of the longest part of the limb. This is the reason for the large circumference values.  
 
-All joints and skeleton tracked 
+\subsection{Rectangle Model}
+The rectangle model performed much better than expected. The accuracy values for the different limbs ranged from 18.89\% to 49.28\%.
 
-\subsection{Left Performance}
+This spread of results and deviation from the actual circumference measurements was significantly better than the results of the ellipse method.
 
-\subsection{Back Performance}
+This model can better deal with the elongation of limbs. Additionally, the slight variations in orientation that greatly impacted the ellipse model, do not affect this model as much. This model evidently creates a much tighter circumference approximation than the ellipse method. 
 
-The "Back" view performed better than expected despite the average error of 23.11\%
+This method, however, still does not meet the requirements of have an accuracy of less than 30\%. For an implementable solution, this accuracy would have to be further decreased to a value in the region of 5\%. Therefore, there is still much work to be done in improving the accuracy of the modelling. 
 
-\subsection{Right Performance}
+The positive takeaway is that this model can be used to create the maximum boundary or encapsulation of the circumference. With further data points or improved measurement techniques, this modelled can be adjusted down to more accurately fit the circumference (E.g. Add curvature to the corners etc.). 
 
-Front was the most accurate
+\section{User Interface} \label{UIAnalysis}
 
-Misc\\
-Missing - Height, Skinny, Back, Skeleton Mapping
-8) Empirical Insights - Trying to determine a correct measurement,  length of people, skinny person, skeleton not perfectly fitting, background edges not perfect \\
+\subsection{Autonomy}
+As eluded to in previous sections, the system as it stands relies on the operator or user to a large extent. The system dependencies on the user are listed below:
 
-5) Uncertainty model\\
+\begin{itemize}
+	\item User must select the appropriate view measurement
+	\item User must execute the measurement process
+	\item User must error check each "View" measurement
+	\item User must instruct person being measured how to orientate for optimum results 
+\end{itemize}
 
-\fi
+\paragraph{View Selection}
+The selection of "Views" in the user interface is effective in that ensures only one view is chosen at a time. It also has a relevant status update when a new view is chosen. However, the reliance of the user to choose the correct "View" is large. This causes an area of operation that is prone to error as the user can often forget to choose a new view or the correct view. This should be made more autonomous with algorithms that automatically detect the correct view depending on the orientation of the body. If this is not implemented, at least more visible warnings should be shown to guide the user if he/she makes a mistake (E.g. Tries to take a new measurement when the orientation of the measured body has obviously changed).
+
+\paragraph{Measurement Process}
+The measurement process itself relies on the user significantly. All though all the background processing is handled and abstracted from the user, the user still needs to initiate the process, perform validation on the output measurements and advise the measured person how to adjust their body for better readings. This empirical correction and execution would require the use to be train and/or spend a great deal of time and effort during the measurement process. Additionally, it makes the system more prone to error as the user may miss small mistakes in the process. This is not ideal for the user or the person being measured and may cause frustration towards the system, resulting in a lack of adoption. The measurement process should be made far more autonomous before a solution is implementable. Suggestions for this are given in Chapter \ref{recommendations}.
+
+\subsection{Aesthetics}
+This is the first version of a basic working solution and as such, is missing a few key design elements. Besides the error checking procedures that should be included, mentioned in the above section, the interface itself would have to be redesigned to optimise user ease-of-use, comfort and effectiveness. This would be accomplished by making the interface more intuitive with more obvious controls and more messages. A few required improvements are listed below:
+
+\begin{itemize}
+	\item Improve the colour scheme of the interface to make the experience for the user more enjoyable
+	\item Increase the size and/or improve the locations of buttons to make them more easily accessible
+	\item Make the status bar more visible and/or use more pop-up windows
+	\item Have different screens to guide the user through the process
+	\item Make the data easily exportable (E.g. To a database or Excel spreadsheet)
+\end{itemize} 

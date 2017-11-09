@@ -15,8 +15,8 @@ This section begins with overall insights gained about this functional area. Aft
 
 \begin{itemize}
 	\item Human Detection
-	\item Plane Creation
 	\item Extremity Detection
+	\item Measurement Validation
 \end{itemize}
 
 \subsection{Overall}
@@ -51,23 +51,38 @@ The next process in the detection process was to understand if the depth data co
 \subsubsection{Kinect Failures}
 Despite the suitability of Kinect demonstrated above, there were certain instances where its performance was inadequate and negatively impacted the overall performance of the system. These are explained in the following paragraphs. 
 
+\paragraph{Range and Resolution}
+The Kinect has a limited operating window and resolution for its depth data as mentioned in Section\hl{(Insert reference)}. This range is further limited in order to ensure the entire human body is detected. 
+
+The depth resolution used for this project was 640 x 480, which was the maximum available by the Kinect. The Kinect also has a maximum working range of 2.5m (I.e. Any further diminishes the quality fo the depth data). It was determined that at a height of approximately 1m (101.5 cm), most volunteers had to stand further at 2m or further to be detected. This limited window together with the limited depth resolution, caused a physical limitation on the accuracy of the system and is another reason for the decreased performance. 
+
 \paragraph{Detection}
-It was observed that the Kinect's human detection and skeleton tracking was most effective when the volunteer was directly facing it. Its ability to detect humans facing $90^{\circ}$
+It was observed that the Kinect's human detection and skeleton tracking was most effective when the volunteer was directly facing it. This is clear from the performance of the measurements in the "Front" view and the lack of miscellaneous errors such as missing measurements. This can be attributed to the fact that the Kinect performs the best when a person faces it head on (Parallel to the image plane). This is due to the Kinect being able to fully track the skeleton of the user. As a result, a more accurate and reliable skeletal coordinate system can be used, which in turn provide more accurate planes of measure. 
+
+The Kinect's ability to detect volunteers facing $90^{\circ}$ (I.e. "Left" or "Right" view) from itself is limited and detecting volunteers facing $180^{\circ}$ (I.e. "Back" view) from itself is even worse. During testing, it was noted that measurements in the different views was only possible if the volunteer's skeleton was already tracked (I.e. facing the Kinect at some point). 
+
+Additionally, the Kinect is not built to detect a person if he/she has his/her back to it. If the skeleton is tracked, due to the person facing it at some point, and they now have their back to the Kinect, the Kinect cannot differentiate this from the skeleton facing it directly. To compensate for this in the system, the left and right sides of the body were switched in the algorithm to simulate the turning of the body. However, it was noticed that the skeleton would not map to the body as well as if the person was facing it directly. Also, joints would often be "Inferred" or "Not Tracked". This is the reason for the Back View being prone to errors such as "Incorrect Pixel Removal" or "Missing Measurements" explained in Section \ref{empiricalObservations}. 
 
 \paragraph{Inferred Joints}
+As mentioned in \hl{(Insert Reference)}, when the Kinect is unable to track a "Joint" due to it being out of view, the Kinect will "infer" its position. These "Inferred Joints" are useful in understanding characteristics of the detected person such as their 3D orientation. However, they often have a great deal of uncertainty in the modelling of their exact position and thus, for a single position and orientation of a detected person, the position of the "Inferred Joint" could change drastically. This makes it undesirable for measurement purposes.
+
+The view selection in User Interface is used to compensate for this as the algorithm neglects the body parts out of sight (For example, if the person has the left side of their body facing the camera, the skeleton on right side will not be rendered). The only issue with this is in determining the "Waist" measurement in either the "Left" or the "Right" View. Since only one hip is clearly detected by the "Kinect", the other one is often "Inferred". The "Waist" measurement is taken across both hips and due to the inaccuracy of the "Inferred Joint", the plane of measurement for the "Waist" is unpredictable. This is what causes the "Incorrect Waist Plane" error mentioned in Section \ref{empiricalObservations}. 
+
+To compensate for this, the operator of the User Interface often would instruct the volunteer to slightly rotate their body for a more accurate "Waist" reading. However, this introduces other issues such as changing the axes of measurement for the limbs and occasionally causes "Overlap Errors" in the "Lower Leg" measurements. This is therefore not an effective empirical workaround of the problem. 
 
 \paragraph{Jitter}
+This refers to the phenomenon observed where the rendered skeleton of the tracked person "moves around" or "jitters" when there is live tracking. Even if a person is relatively still, the "Jittering" of the skeleton is still noticed. This is predominately due to the presence of noise in the measurement process of the person. This causes a slight variation in the skeleton of the tracked person at a given instant. Since the skeleton is used as the coordinate system for all measurements, this is not ideal as it introduces a level of uncertainty.  
+
+Additionally, it was observed that "Inferred Joints" experience an even greater "Jitter". This makes them even more unreliable and further explains the occurrence of the "Incorrect Waist Plane" error. 
 
 \paragraph{Skeleton Mapping}
-Detecting Users\\
-Skeleton tracking - Jitter, Inferred Joints, Ideal for Front, mapping to colour image - Skinny\\
-Lengths\\
+It was occasionally noticed that the skeleton of detected human often did not map accurately to the colour image. This was caused due to issues mentioned above like "Jittering" and the Kinect's inability to detect a human facing away from it. 
+The incorrect mapping causes both an inconsistency in the measurement planes and an error in a measurement due to the incorrect plane being used. 
 
+Additionally, it was noticed that due to the limited resolution of the Kinect's depth data and the limited workable distance from the Kinect, the skeleton mapping of "Skinny" individuals lower Arms and legs was poor. As seen in Section \ref{empiricalObservations} under "Missing Measurements", Volunteer 4's "Lower Left Arm" and "Lower Right Arm" measurements were missing. Upon inspection of Figures \ref{fig:volunteer4Back} and \ref{fig:volunteer4Left}, it is clear that due to the individual's smaller frame and the uncertainty in the skeleton mapping, it is actually mapped to underneath the actual arm (Outside the boundaries of the lower arm). 
 
-\subsection{Plane Creation}
-Waist plane\\
-Skinny\\
-Moving planes - Consistency\\
+This meant that the skeleton was mapped to the "background removed" part of the image and caused the algorithm to believe the arm had no extremities. This in turn, caused the incorrect reading of "0cm". This is not a significant problem with larger framed individuals as the large surface area of their limbs ensures that even if their is uncertainty in the skeleton mapping, it is more likely to still map to within the boundaries of the limb. 
+
 
 \subsection{Extremity Detection}
 Padding\\

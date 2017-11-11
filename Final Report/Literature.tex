@@ -105,6 +105,22 @@ The essential information retrieved from this document include a description of 
 	\item The accelerometer used to detect to determine the orientation of the Kinect 
 \end{itemize}
 
+\subsubsection{Depth Camera \cite{msdnDepthCamKinect2017}}
+
+\paragraph{Overview}
+This technical documentation provided by Microsoft Robotics details more specific operations and interfaces to interact with the depth camera. This is a generic document for all depth camera devices that are supported by Microsoft.  
+
+\paragraph{Relevance}
+This document does not provide specific information regarding how to interact with the Kinect's API to interface with the depth sensor and manipulate depth data. However, it provides essential information regarding how depth data is stored in all Microsoft devices with this functionality. 
+
+\subparagraph{Background Theory}
+The key details extracted from this document that inform the use of depth data retrieved from the Kinect are as follows: 
+\begin{itemize}
+	\item A brief introduction to the depth image space.
+	\item The information stored in depth data.
+	\item The bit size of the depth data and the relevance of each bit.
+\end{itemize}
+
 \subsubsection{Coordinate Spaces \cite{msdnCoSpaces2017}}
 
 \paragraph{Overview}
@@ -125,15 +141,36 @@ Depth image data is processed to produce a frame of skeleton data. All points in
 \subsubsection{Skeletal Tracking \cite{msdnSkelTrack2017}}
 
 \paragraph{Overview}
-
+This technical documentation provided by Microsoft explains the high-level functioning of the Kinect's skeletal tracking capabilities. It provides an overview of how the Kinect recognises people and various operating conditions for effective tracking.
 
 \paragraph{Relevance}
-
+Understanding how the skeletal tracking system operates is essential in understanding the strengths and weaknesses of using the Kinect for human body detection. Additionally, the information regarding operating conditions advises various aspects of the experiment design procedure. 
 
 \subparagraph{Background Theory}
+The skeletal tracking capability is a complex and multifaceted system. Before it can be successfully incorporated into another system or application, it is vital to obtain thorough knowledge of each level of functionality and operation. This document provides the starting point for this journey as it provides a condensation of the capability. More detail is given in Section \hl{(Skeletal Tracking - Ref)}
 
 \subparagraph{Design}
+This document also provides important insights into the operating conditions required for skeletal tracking. These are refereed to when designing the experiment and overall solution in Sections \hl{(Insert 2 refs to skeletal conditions)}. Examples of these operating conditions are listed below:
+\begin{itemize}
+	\item The orientations of the human body for which the Kinect operates successfully as well as those with which it falters.  
+	\item The field of view restrictions of the Kinect
+\end{itemize}
 
+\subsubsection{Tracking Users with Kinect Skeletal Tracking \cite{msdnTrackUserSkel2017}}
+
+\paragraph{Overview}
+This technical document provided by Microsoft provides a comprehensive walk-through and explanation on how to use the Kinect API to access skeletal information. It provides C++ and C# code snippets to successfully enable user tracking, identify user skeletons and access positional information.
+
+\paragraph{Relevance}
+The skeleton tracking capability of the Kinect forms the major foundation of this project. This document provides information that makes navigating the API seamless and provides foundational understanding for unpacking code samples available by Microsoft. It is therefore a crucial piece of information to familiarise oneself with the Kinect API before application development can commence. 
+
+\subparagraph{Background Theory}
+The skeletal information provided by the Kinect API is intuitive to understand and utilise. However, there are important nuances that must be understood to prevent unwanted errors during development. These details are discussed thoroughly in Section \hl{(Insert Skeletal Ref - Joint states etc.)}. 
+
+\subparagraph{Design}
+This document proved critical in algorithm design of the solution. The nature of certain API interactions advised certain decisions regarding the application's class architecture and integration with other parts of the solution. Further explanations are given in Section \hl{(Algorithm Design - Skel Tracking)}. 
+
+Programming Guide\\
 
 Definitions!!!!!!!!!!!!!!!!!\\
 Accuracy\\
@@ -142,6 +179,7 @@ Kinect\\
 Volunteer\\
 Operator\\
 IR - Infrared Rays\\
+API\\
 
 
 When writing your review start of with the general concepts and move to the more specific aspects

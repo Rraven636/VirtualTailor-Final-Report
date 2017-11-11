@@ -86,7 +86,7 @@ The first generation Kinect which is utilised in this project, operates on a pri
 \subparagraph{Component Selection}
 This report aided in the selection of a component for the design. The results yielded that the second generation Kinect on average performs better than the first generation Kinect. However, a large amount of performance testing was done in extreme conditions such as in direct sunlight, in darkness, at far distances etc. Consequently, significant disparity in the performance occurred mostly in these special conditions. For the purposes and operating conditions of the project, the first generation Kinect is sufficient. Elaboration into the evaluation between the two sensors is done in Section \hl{Component Selection} 
 
-\subsubsection{Kinect for Windows Sensor Components and Specifications}
+\subsubsection{Kinect for Windows Sensor Components and Specifications \cite{msdnKinectSpecs2017}}
 
 \paragraph{Overview}
 This technical documentation provided by Microsoft details the components that comprise the Kinect sensor and its specifications. This provides background information regarding the types of information it provides and a high-level description of how the sensor operates.
@@ -105,31 +105,35 @@ The essential information retrieved from this document include a description of 
 	\item The accelerometer used to detect to determine the orientation of the Kinect 
 \end{itemize}
 
-\subsubsection{Coordinate Spaces}
+\subsubsection{Coordinate Spaces \cite{msdnCoSpaces2017}}
 
 \paragraph{Overview}
 This technical documentation provided by Microsoft details the coordinate spaces for the three streams of data available - Colour, Depth and Skeleton. This provides background information explains how to interpret the data explains the manner in which it is stored. It also provides a brief introduction to how to use the API to transform data between the different spaces.
 
 \paragraph{Relevance}
-This description expands on the introductory theory provided on the component composition of the Kinect. This forms the reference used for digital representation of real world information captured by the relevant sensing components. It delves deeper into the intricacies of each of the data types and provides the base for interpreting and manipulating the data algorithmically. 
+This description expands on the introductory theory provided on the component composition of the Kinect. This forms the reference used for digital representation of real world information captured by the relevant sensing components. It delves deeper into the intricacies of each of the data types and provides the base for interpreting and manipulating the data algorithmically. The detailed explanation of this information is included in Section \hl{(Coordinate Spaces Ref)}. A brief expansion on the most significant information utilised from this document is seen below: 
 
 \subparagraph{Colour Space}
- 
+All the real world data available in the field of view of the RGB camera is captured and available as a frame of data. The frame is made of a number of pixels depending on the resolution specified. Each pixel at a particular (x, y) coordinate on the colour frame contain values for red, green and blue colour.
 
 \subparagraph{Depth Space}
-
+A depth frame is available that is a grayscale representation of everything in the field of view of the camera. Like the Colour Space, the frame consists of a number of pixels depending on the resolution. However, these pixels hold the distance of the nearest object in millimetres at a given (x, y) coordinate. The (x, y) coordinate correspond to the position of the pixel on the depth frame and have no direct correlation with dimensions in physical space.
+	
 \subparagraph{Skeleton Space}
+Depth image data is processed to produce a frame of skeleton data. All points in skeleton space are in 3D. The Kinect acts as the point of origin with a positive x-axis extending to the left, a positive y-axis extending upwards and a positive z-axis extending in the direction the Kinect is pointing. Skeleton data can also be used to track human skeletons and provide positional data of the skeleton.
+
+\subsubsection{Skeletal Tracking \cite{msdnSkelTrack2017}}
+
+\paragraph{Overview}
 
 
-It forms the reference that is be used when  description of each component segment of the Kinect and their respective specifications. The key details retrieved are as follows: 
-\begin{itemize}
-	\item The resolution of the RGB camera
-	\item The operation of the depth sensor
-	\item Frame rates for the depth and colour stream
-	\item Viewing angle or field of view of the Kinect
-	\item Vertical tilt range
-	\item The accelerometer used to detect to determine the orientation of the Kinect 
-\end{itemize}
+\paragraph{Relevance}
+
+
+\subparagraph{Background Theory}
+
+\subparagraph{Design}
+
 
 Definitions!!!!!!!!!!!!!!!!!\\
 Accuracy\\

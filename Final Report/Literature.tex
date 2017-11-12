@@ -172,9 +172,19 @@ The skeletal information provided by the Kinect API is intuitive to understand a
 \subparagraph{Design}
 This document proved critical in algorithm design of the solution. The nature of certain API interactions advised certain decisions regarding the application's class architecture and integration with other parts of the solution. Further explanations are given in Section \hl{(Algorithm Design - Skel Tracking)}. 
 
+\subsubsection{Formula Derived Mathematically for Computation of Perimeter of Ellipse \cite{ellipsePerimeter2012}}
+
+\paragraph{Overview}
+The ellipse is a widely used shape that forms a crucial part of mathematics. Some of its uses include, but are not limited to, conic sections and Keplar's law od Planetary Motion. Despite, its prevalence in many applications, there does not exist a set formula that allows the perimeter to be calculated from the axes of the ellipse. Instead, all methods used to date for calculation, are approximations. This journal article, explores these existing methods, proposes a new formula that relates the radius to the perimeter and evaluates their performances.The proposed method performed very close to or better than many existing models. As such, the formula relationship can be utilised and allows for efficient perimeter determination using the major and minor axes.
+
+\paragraph{Relevance}
+The second major part of this project is the modelling of 3D circumferences using measurements obtained by the system. A model to determine these circumferences must be developed and as such, various mathematical shapes or parametric models should be tested. The ellipse is one such shape. 
+
+\subparagraph{Design}
+It is theorised in this project that a body part can be modelled within a certain error margin using the ellipse as a model. As such, the formula proposed in this article was utilised forms a fundamental part of the modelling stage of the algorithm. This is expanded on in Section \hl{(Ellipse Ref - Design)}.
+
 Programming Guide + Documentation\\
 Uncertainty\\
-Ellipse\\
 Clothing\\
 
 Definitions!!!!!!!!!!!!!!!!!\\

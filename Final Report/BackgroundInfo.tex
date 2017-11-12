@@ -248,15 +248,25 @@ Due to the structured light technology underpinning the depth sensor, there are 
 	\item Very reflective surfaces in the field of view of the Kinect can compromise readings	
 \end{itemize} 
 
-\hl{!!!!!!!!!!!!!!Guidelines for measurements}
+\hl{!!!!!!!!!!!!!!Guidelines for measurements} 
 
-\subsubsection{Internal Process}
+\subsubsection{Internal Process + Noise}
 Middleware \cite{nonContact2017}\\
 Joint Filtering\\
 
-\subsubsection{Noise}
+\subsection{Measurement}
 
+\subsubsection{3D Space}
+There are various theorems and axioms that allow for analysis of geometrical in Euclidean or three-dimensional space. One such theorem used for determining the three-dimensional distance between two points in space is the Pythagorean Theorem. Using the Cartesian coordinate system, this formula can be seen below:
 
+Let Point 1 = $(x_1, y_1, z_1)$, Point 2 = $(x_2, y_2, z_2)$ and the Distance between Point 1 and Point 2 = $d$
+\begin{equation}
+d = \sqrt{(x_1 - x_2)^{2} + (y_1 - y_2)^{2} + (z_1 - z_2)^{2}}
+\end{equation} 
+3D distance \cite{nonContact2017}\\
+
+\subsubsection{Accuracy}
+Error formula \cite{nonContact2017}\\
 
 
 \subsection{Microsoft SDK}
@@ -269,15 +279,10 @@ Joint Filtering\\
 
 \paragraph{Colour, Depth Class}
 
+
 \subsection{Clothing}
 
-\subsection{Measurement}
 
-\subsubsection{Pythagoras}
-3D distance \cite{nonContact2017}\\
-
-\subsubsection{Accuracy}
-Error formula \cite{nonContact2017}\\
 
 \subsection{Modelling}
 

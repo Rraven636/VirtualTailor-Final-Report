@@ -207,11 +207,48 @@ In default range mode, the skeletal tacking system has the same range as the dep
 	\label{fig:skelTrackFieldView}
 \end{figure}
 
+\paragraph{API Support}
+When using the skeletal tracking system, and users are present, a skeleton frame of data is produced. This frame holds the data of up to six people in the field of view. In the frame, all skeletons of detected users can only have two states - "Tracked" or "Position Only". A "Position Only" skeleton provides information about the position of the user, but no joint information. A "Tracked" skeleton on the other hand, provides detailed information about the position, in the field of view of the sensor, of the user and twenty joints in his/her body. \cite{msdnTrackUserSkel2017} All the joints available and their positions, can be seen in Figure \ref{fig:skelAndJoints}. Each joint can also have one of three states listed below:
 
+\begin{itemize}
+	\item "Tracked" - A clearly visible joint.
+	\item "Inferred" - A joint that is not clearly visible
+	\item "Non-tracked" - A joint that is excluded (For example, lower joints in seated mode)
+\end{itemize}
 
-Skeleton tracking\\
-Known errors\\
-Guidelines for measurements\\
+\begin{figure}[ht]
+	\centering
+	{%
+		\setlength{\fboxsep}{0pt}%
+		\setlength{\fboxrule}{0.5pt}%
+		\fbox{
+			\includegraphics[width=0.7\textwidth]{skeletonAndJoints.png}
+	}}
+	\caption{An illustration of joints available for a "Tracked" skeleton retrieved from a skeleton frame of data. \cite{msdnTrackUserSkel2017}}
+	\label{fig:skelAndJoints}
+\end{figure}
+
+As mentioned in Section \ref{litTrackSkelUsers}, full snippets of code required to track users with the Kinect skeletal tracking system, using the Kinect for Windows SDK, are provided in \cite{msdnTrackUserSkel2017}. However, a summary of the process used in C\# is given below:
+
+\begin{enumerate}
+	\item Enable skeletal tracking in an active Kinect
+	\item Create an event handler to fire when a skeleton frame is ready
+	\item When a skeleton frame is ready, copy the array of skeletons objects available from the frame to a new array for manipulation
+	\item Loop through the array to identify the "Tracked" skeletons
+	\item For a given tracked skeleton, loop through the array of joints provided for information of a single joint
+	\item Utilise the information of states and/or positions of the joints and skeleton for a given application
+\end{enumerate}
+
+\paragraph{Known Errors}
+Due to the structured light technology underpinning the depth sensor, there are certain environmental conditions that would affect its accuracy. Consequently, this would also affect the functioning of the skeletal tracking system. The following environmental conditions should be avoided as they significantly impair the Kinect's functioning: \cite{kinectComp2011}
+
+\begin{itemize}
+	\item The Kinect should not be used in a dark room
+	\item The Kinect cannot operate with direct light shining in its direction (Should also not be used outdoors)
+	\item Very reflective surfaces in the field of view of the Kinect can compromise readings	
+\end{itemize} 
+
+\hl{!!!!!!!!!!!!!!Guidelines for measurements}
 
 \subsubsection{Internal Process}
 Middleware \cite{nonContact2017}\\

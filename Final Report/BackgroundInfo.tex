@@ -51,7 +51,7 @@ The second generation Kinect was launched in 2013. It was released with the Xbox
 \end{itemize} 
 
 \paragraph{Kinect for Windows}
-For each generation of Kinect for Xbox released, a Kinect for Windows was released. The version numbers correlate (I.e. The Kinect for Windows also has a v1 and v2). Kinect for Windows was created to be used by a computer whereas the Kinect for Xbox to be used by the console. They are, however, functionally identical and thus, a Kinect for Xbox can be "converted" to a  Kinect for Windows by using a USB adapter. The only difference with this is that the Kinect for Windows supports "Near Mode" whereas a Kinect for Xbox used with an adapter does not. ("Near Mode" will be explained further in Section \hl{(Near Mode explanation)})
+For each generation of Kinect for Xbox released, a Kinect for Windows was released. The version numbers correlate (I.e. The Kinect for Windows also has a v1 and v2). Kinect for Windows was created to be used by a computer whereas the Kinect for Xbox to be used by the console. They are, however, functionally identical and thus, a Kinect for Xbox can be "converted" to a  Kinect for Windows by using a USB adapter. The only difference with this is that the Kinect for Windows supports "Near Mode" whereas a Kinect for Xbox used with an adapter does not. ("Near Mode" will be explained further in Section \ref{depthRange})
 
 \paragraph{Kinect Used}
 In this project, the Kinect for Xbox 360 with a USB adapter was used for development. Further reasons for this component choice is given in Section \hl{(Component Selection)}
@@ -104,7 +104,7 @@ The depth sensor relies on a principle known as structured light. The IR emitter
 	\label{fig:depthRefPattern}
 \end{figure}
 
-\subsubsection{Coordinate Spaces}
+\subsubsection{Coordinate Spaces} \label{kinectCoordinateSpaces}
 The Kinect is able to stream 3 types of data - colour, depth and skeleton data. This streamed data is available in the form of data frames that occur one at a time. The Kinect API also provides functionality that converts data between the different spaces. \cite{msdnCoSpaces2017} The sections below will elaborate on each of the spaces and will conclude with a synopsis of the conversion functionality available:
 
 \paragraph{Colour Space}
@@ -121,30 +121,101 @@ Similarly to the the colour sensor, the depth sensor is also able to produce fra
 		\fbox{
 			\includegraphics[width=0.7\textwidth]{distanceToDepthSpace.png}
 	}}
-	\caption{An illustration of the distances that stored in each depth pixel, at a particular (x, y) coordinate. \cite{msdnCoSpaces2017}}
+	\caption{An illustration of the distances that stored in each depth pixel, at a particular (x, y) coordinate. \cite{msdnDepthCamKinect2017}}
 	\label{fig:distanceToDepthSpace}
 \end{figure}
 
-\subparagraph{Range}
+\subparagraph{Range} \label{depthRange}
+The depth sensor has two ranges - default and near range. The default range is available for both the Kinect for Windows and the Kinect for Xbox. However, as mentioned above, the near range is not available in the Kinect for Xbox. Therefore, the Kinect for Xbox use with a USB adapter will still still not have near range capabilities. The distances associated with the two ranges can be seen in Figure \ref{fig:depthSensorRanges}.
+
+\begin{figure}[ht]
+	\centering
+	{%
+		\setlength{\fboxsep}{0pt}%
+		\setlength{\fboxrule}{0.5pt}%
+		\fbox{
+			\includegraphics[width=0.7\textwidth]{depthSensorRanges.png}
+	}}
+	\caption{An illustration of the distances ranges for the default range and near range modes of the Kinect. \cite{msdnCoSpaces2017}}
+	\label{fig:depthSensorRanges}
+\end{figure}
 
 \subparagraph{Depth Data Storage}
+As mentioned above, the depth data stored in each pixel contains the distance from the depth sensor to the nearest object in millimetres. Each pixel is made up of 11 bits of information. The 3 least significant bits contain the player index and the remaining 8 bits contain the distance. \cite{msdnDepthCamKinect2017} The player index will be explained in Section \ref{kinectSkelTracking}. 
+
+Also, as seen in Figure \ref{fig:depthSensorRanges}, there are regions of depth data in which they are classified as out of range. If a piece of depth data falls into these ranges, they are given a special value. \cite{msdnCoSpaces2017} These values are listed below:
+
+\begin{itemize}
+	\item Too Near - 0x0000
+	\item Too Far - 0x0FFF
+	\item Unknown - 0x1FFF
+\end{itemize}  
 
 \paragraph{Skeleton Space}
+A frame of skeleton data is produced by processing a depth frame at runtime. If a person is visible in the depth sensor, skeleton data will be generated that contains 3D position data for their skeleton. Up to two human skeletons can be tracked. (Tracking is further explained in Section \ref{kinectSkelTracking}). For a tracked skeleton, all position data for their skeleton and joints are represented as 3D coordinates - (x, y, z). These coordinates are expressed in metres. The axes used to define this coordinate system is seen in Figure \ref{fig:skelSpaceAxes}. In this coordinate system, the position of the Kinect defines the origin with the positive z-axis extending in the direction the Kinect is pointing. The positive x-axis extends to the left of the Kinect and the positive y-axis extends upwards. \cite{msdnCoSpaces2017}
 
-Conversion to 3D space \cite{nonContact2017}\\
+\begin{figure}[ht]
+	\centering
+	{%
+		\setlength{\fboxsep}{0pt}%
+		\setlength{\fboxrule}{0.5pt}%
+		\fbox{
+			\includegraphics[width=0.7\textwidth]{skeletonSpaceAxes.png}
+	}}
+	\caption{An illustration of the axes used for skeleton space. \cite{msdnCoSpaces2017}}
+	\label{fig:skelSpaceAxes}
+\end{figure}
 
-\subparagraph{3D Points - No calibration}
+\subparagraph{Mirroring}
+During generation of a human skeleton, the skeleton system mirrors the tracked user. This means that the left and right sides of the skeleton are inverted. This also implies that the direction of a person facing the Kinect is considered to be the -z direction. \cite{msdnCoSpaces2017}
+
+\hl{(Clipping Paragraph - Maybe)}
 
 \paragraph{Conversion}
+Skeleton position data holds 3D positions and as such, can be thought of as real world positions. For colour and depth data, these real world positions are mapped to 2D planes. Therefore, there is a relation between the different spaces. \cite{nonContact2017} This can be seen in Figure \ref{fig:spaceConversion}. However, depth data and colour data do not always map to the same (x, y) coordinate and thus a conversion must also occur between them. \cite{msdnDepthCamKinect2017} Fortunately, these functionality for conversion between the different spaces is provided in the Kinect for Windows SDK. A link to the documentation can be seen in Section \hl{(Code documentation)}.
+
+\begin{figure}[ht]
+	\centering
+	{%
+		\setlength{\fboxsep}{0pt}%
+		\setlength{\fboxrule}{0.5pt}%
+		\fbox{
+			\includegraphics[width=0.7\textwidth]{spaceConversion.png}
+	}}
+	\caption{An illustration of the relation between the coordinate spaces for colour, depth and skeleton data. \cite{nonContact2017}}
+	\label{fig:spaceConversion}
+\end{figure}
+
+\subsubsection{Skeleton Tracking} \label{kinectSkelTracking}
+An inbuilt functionality of the Kinect is skeletal tracking. The skeleton system uses the depth sensor and allows the Kinect to recognise different people in its field of view and follow their actions. The Kinect can recognise up to six people in its field of view at a given time and track up to two of these users in detail. For these two tracked human skeleton, their joints are also which yields information regarding their position and movement at different time intervals. \cite{msdnSkelTrack2017}
+
+\paragraph{User Recognition}
+In order to active the recognition of the Kinect's skeletal tracking system, a person needs to be in front of the sensor with their head and upper body visible. Recognition begins automatically without any specific calibration required. In terms of the orientation of the person's body, the system functions most effectively when a person is standing or sitting, and directly facing the Kinect. Sideways poses are difficult for the system to process as the there are parts of the body not visible. \cite{msdnSkelTrack2017}
+
+\paragraph{Field of View}
+In default range mode, the skeletal tacking system has the same range as the depth sensor (Data is clearly detectable between 0.8 and 4 metres). However, users will often have to use their arms and thus, the suggested practical range for effective tracking is between 1.2 and 3.5 metres. An illustration of the field of view can be seen in Figure \ref{fig:skelTrackFieldView}.
+
+\begin{figure}[ht]
+	\centering
+	{%
+		\setlength{\fboxsep}{0pt}%
+		\setlength{\fboxrule}{0.5pt}%
+		\fbox{
+			\includegraphics[width=0.7\textwidth]{skeletonTrackingFieldView.png}
+	}}
+	\caption{An illustration of the suggested practical field of view for effective skeletal tracking using the Kinect. \cite{msdnSkelTrack2017}}
+	\label{fig:skelTrackFieldView}
+\end{figure}
+
+
+
+Skeleton tracking\\
+Known errors\\
+Guidelines for measurements\\
 
 \subsubsection{Internal Process}
 Middleware \cite{nonContact2017}\\
 Joint Filtering\\
-
-\subsubsection{Skeleton Tracking}
-Skeleton tracking\\
-Known errors\\
-Guidelines for measurements\\
 
 \subsubsection{Noise}
 
@@ -161,6 +232,7 @@ Guidelines for measurements\\
 
 \paragraph{Colour, Depth Class}
 
+\subsection{Clothing}
 
 \subsection{Measurement}
 
@@ -173,6 +245,8 @@ Error formula \cite{nonContact2017}\\
 \subsection{Modelling}
 
 \subsubsection{Ellipse}
+
+
 
 
 \subsection{Augmented Reality}

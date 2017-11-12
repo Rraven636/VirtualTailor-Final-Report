@@ -257,16 +257,19 @@ Joint Filtering\\
 \subsection{Measurement}
 
 \subsubsection{3D Space}
-There are various theorems and axioms that allow for analysis of geometrical in Euclidean or three-dimensional space. One such theorem used for determining the three-dimensional distance between two points in space is the Pythagorean Theorem. Using the Cartesian coordinate system, this formula can be seen below:
+There are various theorems and axioms that allow for analysis of geometrical in Euclidean or three-dimensional space. One such theorem used for determining the three-dimensional distance between two points in space is the Pythagorean Theorem. Using the Cartesian coordinate system, this formula can be seen below: \cite{nonContact2017}
 
 Let Point 1 = $(x_1, y_1, z_1)$, Point 2 = $(x_2, y_2, z_2)$ and the Distance between Point 1 and Point 2 = $d$
-\begin{equation}
+\begin{equation} \label{eq: distance}
 d = \sqrt{(x_1 - x_2)^{2} + (y_1 - y_2)^{2} + (z_1 - z_2)^{2}}
 \end{equation} 
-3D distance \cite{nonContact2017}\\
 
 \subsubsection{Accuracy}
-Error formula \cite{nonContact2017}\\
+When recording measurements of a physical quantity, it is often useful to understand the difference between the measured value and the actual value of the physical quantity. This difference is refereed as the measurement error or accuracy. The formula used to represent this as a percentage is seen below: \cite{nonContact2017}
+
+\begin{equation} \label{eq: measurementAcc}
+d = \frac{Measured Value - Actual Value}{Actual Value} * 100
+\end{equation} 
 
 
 \subsection{Microsoft SDK}

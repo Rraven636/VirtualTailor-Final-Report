@@ -62,9 +62,10 @@ The aim of the overall implementation is to alleviate stresses on both consumers
 	\item An intuitive interface that allows the customer to seamlessly get advise on clothing at his/her retailers of choice	
 \end{itemize} 
 
-A detailed end-to-end journey of the implementation is given in the following section.
+These key components were developed into a more detailed end-to-end journey of the implementation. This is given in the following section.
 
 \subsection{End-to-End Implementation Journey}
+A diagram illustrating the high-level functioning of the entire implementation is seen in Figure \ref{fig:endToEndImplementation}.
 
 \begin{figure}[ht]
 	\centering
@@ -72,18 +73,46 @@ A detailed end-to-end journey of the implementation is given in the following se
 		\setlength{\fboxsep}{0pt}%
 		\setlength{\fboxrule}{0.5pt}%
 		\fbox{
-			\includegraphics[width=0.8\textwidth]{End_to_End_Implementation.png}
+			\includegraphics[width=0.7\textwidth]{End_to_End_Implementation.png}
 	}}
 	\caption{An illustration of the End-to-End journey of the envisioned implementation}
 	\label{fig:endToEndImplementation}
 \end{figure}
 
+The implementation can be broken down into three major subsystems that are mentioned and explained in the following subsections:
 
+\subsubsection{Measurement System}
+This system's main purpose is to be able to determine the personalised body parameters of a customer and then generate a full 3D model of their body to provide useful information such as suggestions for clothing sizes. It will achieve this by using a Kinect, or another device with depth sensing capabilities. 
+
+The vision is that the Kinect would be integrated into a specially designed room. The customer would need to step into this room and hold certain poses. The Kinect, together with a back-end processing unit, would then create a full 3D. The entire process from start to finish should be less than ten minutes. 
+
+This is the most integral part of the implementation as it allows for the realisation of the other two subsystems mentioned below. The main focus of this project is creating a first attempt at this subsystem. As such, its design and functioning are covered in great detail in Section \hl{(Measurement Design)}. 
+
+\subsubsection{Store Integration}
+In order to facilitate the measuring process, a room, integrated with a Kinect, would need to be placed at a convenient location for customers. Two possibilities are explored here:
+
+\paragraph{Traditional Retailers}
+There is a significant incentive for these retailers to provide a space for this "virtual room". (Expanded upon in Section \hl{(Benefits)}) As such, given that this system aims to limit the need for physically trying on clothes, one of the spaces previously dedicated to a dressing room could be upgraded to this new virtual room. Minimal change to the infrastructure would be required and this also frees up more space as unused dressing rooms can be replaced. 
+
+In this instance, consumers would be able to record their measurements when visiting the clothing store. The measurements would be recorded and they can continue their clothing shopping with a better understanding of sizes. Since the customer would already be shopping and the process only needs to occur once (Assuming no change to the customer's body), it seems likely that their would be buy-in into the system.
+
+\paragraph{Partners}
+If there is enough interest by various companies, a measurement booth can be built in a commonly used location (I.e. in a shopping mall). Any customer visiting this booth, would automatically have profiles at all the companies sharing the booth. This is the other alternative if a specific company does not want to dedicate their floor space for this solution, but rather outsource it. This would also be the most likely method in which an online store can partake to allow for digital profiles of their shoppers to be created.
+
+\subsubsection{Cloud Management of Profile}
+Once the measurements of a person are determined and a digital profile is created, that information can now be more easily transferred. Partnerships may be made between clothing companies, online companies and even perhaps tailors. They may agree to share this information for an agreed upon amount and allow the costumer to have clothing suggestions for all the stores they shop at. Alternatively, a single online platform may be created that stores all these profiles and if a clothing supplier partners up with it, it can then provide information to the customers regarding the supplier's specific line of clothing.
+
+\subsubsection{title}
+
+\subsubsection{title}
 1) Online profile of people - Used for online shopping and retail shops\\
 2) Take measurements at a retailer - Virtual Dressing room - A part of the shopping experience and will reduce hassle of trying on clothes\\
 3) Amount wasted in trying on clothes or online returns?\\
 4) Could be used for personalised tailoring
 5) Example of UI - Explanation of how it works
+
+\section{Component Level Design}
+
 
 \section{Component Selection}
 1) Choice of Kinect - Compare to other depth sensors\\

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.25)  12 NOV 2017 16:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.25)  12 NOV 2017 23:40
 entering extended mode
 **"./Final Report.tex"
 ("Final Report.tex"
@@ -567,7 +567,7 @@ LaTeX Info: Redefining \nameref on input line 47.
 \openout3 = `"Final Report.out"'.
 
 
-<uctLogo.png, id=243, 418.56375pt x 425.59pt>
+<uctLogo.png, id=255, 418.56375pt x 425.59pt>
 File: uctLogo.png Graphic file (type png)
  <use uctLogo.png>
 Package pdftex.def Info: uctLogo.png used on input line 61.
@@ -626,20 +626,26 @@ less on input line 178.
 (Introduction.tex
 Chapter 1.
 
-Overfull \hbox (0.1075pt too wide) in paragraph at lines 14--17
-\OT1/cmr/m/n/12 Scope indicates to the reader what has and has not been include
-d in the study. Limitations
+Overfull \hbox (12.2407pt too wide) in paragraph at lines 7--9
+[]\OT1/cmr/m/n/12 Also producer side - Waste etc. Presence of online and augmen
+ted reality and personalisation 
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.17 
-      [1
+l.16 \subsection
+                {Purpose of the study} [1
 
 
-])
+]
+Overfull \hbox (0.1075pt too wide) in paragraph at lines 21--24
+\OT1/cmr/m/n/12 Scope indicates to the reader what has and has not been include
+d in the study. Limitations
+ []
+
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -734,22 +740,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 191--201
 
  []
 
-<model.png, id=478, 650.43pt x 396.48125pt>
+[12] <model.png, id=499, 650.43pt x 396.48125pt>
 File: model.png Graphic file (type png)
  <use model.png>
-Package pdftex.def Info: model.png used on input line 216.
+Package pdftex.def Info: model.png used on input line 217.
 (pdftex.def)             Requested size: 317.07614pt x 193.28534pt.
 
-Underfull \hbox (badness 1642) in paragraph at lines 218--218
+Underfull \hbox (badness 1642) in paragraph at lines 219--219
 \OT1/cmr/m/n/12 MCS08GT16A microcontroller (Please note that your headings shou
 ld be short
  []
 
-[12]) [13 <./model.png>]
+) [13 <./model.png>]
 \openout2 = `BackgroundInfo.aux'.
 
  (BackgroundInfo.tex
-<Kinect360.png, id=494, 245.718pt x 134.904pt>
+<Kinect360.png, id=509, 245.718pt x 134.904pt>
 File: Kinect360.png Graphic file (type png)
  <use Kinect360.png>
 Package pdftex.def Info: Kinect360.png used on input line 21.
@@ -757,14 +763,14 @@ Package pdftex.def Info: Kinect360.png used on input line 21.
  [14
 
 
- <./Kinect360.png>] <KinectOne.png, id=507, 224.63925pt x 131.2905pt>
+ <./Kinect360.png>] <KinectOne.png, id=522, 224.63925pt x 131.2905pt>
 File: KinectOne.png Graphic file (type png)
 
 <use KinectOne.png>
 Package pdftex.def Info: KinectOne.png used on input line 42.
 (pdftex.def)             Requested size: 317.07614pt x 185.32594pt.
  [15 <./KinectOne.png>]
-<Kinect360Components.png, id=522, 384.2355pt x 193.32225pt>
+<Kinect360Components.png, id=537, 384.2355pt x 193.32225pt>
 File: Kinect360Components.png Graphic file (type png)
 
 <use Kinect360Components.png>
@@ -776,7 +782,7 @@ Overfull \hbox (5.9151pt too wide) in paragraph at lines 93--94
 r relies on a principle known as structured
  []
 
-<depthSensorReferencePattern.png, id=538, 422.17725pt x 162.00525pt>
+<depthSensorReferencePattern.png, id=553, 422.17725pt x 162.00525pt>
 File: depthSensorReferencePattern.png Graphic file (type png)
 
 <use depthSensorReferencePattern.png>
@@ -784,42 +790,42 @@ Package pdftex.def Info: depthSensorReferencePattern.png used on input line 102
 .
 (pdftex.def)             Requested size: 317.07614pt x 121.67914pt.
  [17 <./depthSensorReferencePattern.png>]
-<distanceToDepthSpace.png, id=556, 352.31625pt x 277.035pt>
+<distanceToDepthSpace.png, id=571, 352.31625pt x 277.035pt>
 File: distanceToDepthSpace.png Graphic file (type png)
 
 <use distanceToDepthSpace.png>
 Package pdftex.def Info: distanceToDepthSpace.png used on input line 123.
 (pdftex.def)             Requested size: 317.07614pt x 249.32497pt.
  [18 <./distanceToDepthSpace.png>]
-<depthSensorRanges.png, id=568, 467.346pt x 212.59425pt>
+<depthSensorRanges.png, id=583, 467.346pt x 212.59425pt>
 File: depthSensorRanges.png Graphic file (type png)
 
 <use depthSensorRanges.png>
 Package pdftex.def Info: depthSensorRanges.png used on input line 138.
 (pdftex.def)             Requested size: 317.07614pt x 144.23453pt.
 
-<skeletonSpaceAxes.png, id=578, 175.857pt x 174.6525pt>
+<skeletonSpaceAxes.png, id=593, 175.857pt x 174.6525pt>
 File: skeletonSpaceAxes.png Graphic file (type png)
 
 <use skeletonSpaceAxes.png>
 Package pdftex.def Info: skeletonSpaceAxes.png used on input line 164.
 (pdftex.def)             Requested size: 317.07614pt x 314.9259pt.
  [19 <./depthSensorRanges.png>]
-<spaceConversion.png, id=594, 253.54726pt x 149.96025pt>
+<spaceConversion.png, id=609, 253.54726pt x 149.96025pt>
 File: spaceConversion.png Graphic file (type png)
 
 <use spaceConversion.png>
 Package pdftex.def Info: spaceConversion.png used on input line 184.
 (pdftex.def)             Requested size: 317.07614pt x 187.54364pt.
  [20 <./skeletonSpaceAxes.png>]
-<skeletonTrackingFieldView.png, id=608, 364.9635pt x 242.1045pt>
+<skeletonTrackingFieldView.png, id=623, 364.9635pt x 242.1045pt>
 File: skeletonTrackingFieldView.png Graphic file (type png)
 
 <use skeletonTrackingFieldView.png>
 Package pdftex.def Info: skeletonTrackingFieldView.png used on input line 205.
 (pdftex.def)             Requested size: 317.07614pt x 210.34845pt.
  [21 <./spaceConversion.png>]
-<skeletonAndJoints.png, id=621, 226.446pt x 201.1515pt>
+<skeletonAndJoints.png, id=636, 226.446pt x 201.1515pt>
 File: skeletonAndJoints.png Graphic file (type png)
 
 <use skeletonAndJoints.png>
@@ -846,26 +852,142 @@ Underfull \hbox (badness 10000) in paragraph at lines 270--271
 
  []
 
-[24]) [25]
+[24] [25]) [26]
 \openout2 = `Design.aux'.
 
  (Design.tex
 Chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--15
+Underfull \hbox (badness 1867) in paragraph at lines 52--52
+[]\OT1/cmr/m/n/12 The correct size is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+[]\OT1/cmr/m/n/12 Trying on clothes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+[]\OT1/cmr/m/n/12 Significant costs
+ []
+
+
+Underfull \hbox (badness 1590) in paragraph at lines 52--52
+\OT1/cmr/m/n/12 are incurred during
+ []
+
+
+Underfull \hbox (badness 6592) in paragraph at lines 52--52
+[]\OT1/cmr/m/n/12 Difficult to choose
+ []
+
+
+Underfull \hbox (badness 4084) in paragraph at lines 52--52
+[]\OT1/cmr/m/n/12 Not sure how the
+ []
+
+
+Underfull \hbox (badness 5431) in paragraph at lines 52--52
+\OT1/cmr/m/n/12 item will look on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+[]\OT1/cmr/m/n/12 Frustrating to
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 52--52
+\OT1/cmr/m/n/12 exchange if item is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+[]\OT1/cmr/m/n/12 Exchanges severely
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+\OT1/cmr/m/n/12 impact their
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+[]\OT1/cmr/m/n/12 Experience lower
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 52--52
+\OT1/cmr/m/n/12 sale volume due as
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+[]\OT1/cmr/m/n/12 Only available for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+[]\OT1/cmr/m/n/12 There is always
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+\OT1/cmr/m/n/12 delay between
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+\OT1/cmr/m/n/12 getting measured
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+\OT1/cmr/m/n/12 and picking up
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+[]\OT1/cmr/m/n/12 Time required
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+\OT1/cmr/m/n/12 to complete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+[]\OT1/cmr/m/n/12 Measurements can
+ []
+
+
+Underfull \hbox (badness 2875) in paragraph at lines 52--52
+\OT1/cmr/m/n/12 only take place in
+ []
+
+[27
+
+
+
+] [28] <End_to_End_Implementation.png, id=709, 696.6025pt x 1015.795pt>
+File: End_to_End_Implementation.png Graphic file (type png)
+
+<use End_to_End_Implementation.png>
+Package pdftex.def Info: End_to_End_Implementation.png used on input line 77.
+(pdftex.def)             Requested size: 317.07614pt x 462.35796pt.
+ [29] [30 <./End_to_End_Implementation.png>] [31]
+Underfull \hbox (badness 10000) in paragraph at lines 118--122
 
  []
 
-[26
-
-
-
-]) [27]
+) [32]
 \openout2 = `Methodology.aux'.
 
  (Methodology.tex
 Chapter 4.
-[28
+[33
 
 
 
@@ -875,7 +997,7 @@ Overfull \hbox (1.71762pt too wide) in paragraph at lines 33--34
 racy tolerance
  []
 
-) [29]
+) [34]
 \openout2 = `Results.aux'.
 
  (Results.tex
@@ -886,18 +1008,18 @@ Overfull \hbox (5.21207pt too wide) in paragraph at lines 6--7
 of the system and a comparison
  []
 
-[30
+[35
 
 
 
-] [31] [32] [33] [34] [35] [36]
-<FreqDistUncertainties.png, id=770, 296.307pt x 196.3335pt>
+] [36] [37] [38] [39] [40] [41]
+<FreqDistUncertainties.png, id=824, 296.307pt x 196.3335pt>
 File: FreqDistUncertainties.png Graphic file (type png)
 
 <use FreqDistUncertainties.png>
 Package pdftex.def Info: FreqDistUncertainties.png used on input line 317.
 (pdftex.def)             Requested size: 317.07614pt x 210.1107pt.
- [37 <./FreqDistUncertainties.png>]
+ [42 <./FreqDistUncertainties.png>]
 Overfull \hbox (5.82132pt too wide) in paragraph at lines 372--373
 \OT1/cmr/m/n/12 system during its use. These observations are explained in each
  of the following subsections: 
@@ -909,128 +1031,128 @@ Overfull \hbox (3.76765pt too wide) in paragraph at lines 375--376
  of the Kinect performed
  []
 
-<ErrorExample_Blurred.png, id=786, 642.4pt x 481.8pt>
+<ErrorExample_Blurred.png, id=840, 642.4pt x 481.8pt>
 File: ErrorExample_Blurred.png Graphic file (type png)
 
 <use ErrorExample_Blurred.png>
 Package pdftex.def Info: ErrorExample_Blurred.png used on input line 384.
 (pdftex.def)             Requested size: 317.07614pt x 237.81169pt.
 
-<Uncertainty_Left4.png, id=787, 566.71725pt x 544.434pt>
+<Uncertainty_Left4.png, id=841, 566.71725pt x 544.434pt>
 File: Uncertainty_Left4.png Graphic file (type png)
 
 <use Uncertainty_Left4.png>
 Package pdftex.def Info: Uncertainty_Left4.png used on input line 396.
 (pdftex.def)             Requested size: 317.07614pt x 304.62343pt.
 
-<Volunteer7_Back.png, id=788, 568.524pt x 545.03625pt>
+<Volunteer7_Back.png, id=842, 568.524pt x 545.03625pt>
 File: Volunteer7_Back.png Graphic file (type png)
 
 <use Volunteer7_Back.png>
 Package pdftex.def Info: Volunteer7_Back.png used on input line 408.
 (pdftex.def)             Requested size: 317.07614pt x 303.98737pt.
 
-<Volunteer1_Back.png, id=789, 566.71725pt x 544.434pt>
+<Volunteer1_Back.png, id=843, 566.71725pt x 544.434pt>
 File: Volunteer1_Back.png Graphic file (type png)
 
 <use Volunteer1_Back.png>
 Package pdftex.def Info: Volunteer1_Back.png used on input line 420.
 (pdftex.def)             Requested size: 317.07614pt x 304.62343pt.
- [38] [39 <./ErrorExample_Blurred.png>] [40 <./Uncertainty_Left4.png>] <Volunte
-er1_Right.png, id=821, 566.115pt x 543.2295pt>
+ [43] [44 <./ErrorExample_Blurred.png>] [45 <./Uncertainty_Left4.png>] <Volunte
+er1_Right.png, id=874, 566.115pt x 543.2295pt>
 File: Volunteer1_Right.png Graphic file (type png)
 
 <use Volunteer1_Right.png>
 Package pdftex.def Info: Volunteer1_Right.png used on input line 453.
 (pdftex.def)             Requested size: 317.07614pt x 304.26447pt.
- [41 <./Volunteer7_Back.png>]
-<Volunteer3_Back.png, id=833, 565.51276pt x 540.8205pt>
+ [46 <./Volunteer7_Back.png>]
+<Volunteer3_Back.png, id=887, 565.51276pt x 540.8205pt>
 File: Volunteer3_Back.png Graphic file (type png)
 
 <use Volunteer3_Back.png>
 Package pdftex.def Info: Volunteer3_Back.png used on input line 477.
 (pdftex.def)             Requested size: 317.07614pt x 303.23701pt.
 
-<Volunteer3_Right.png, id=834, 566.115pt x 543.2295pt>
+<Volunteer3_Right.png, id=888, 566.115pt x 543.2295pt>
 File: Volunteer3_Right.png Graphic file (type png)
 
 <use Volunteer3_Right.png>
 Package pdftex.def Info: Volunteer3_Right.png used on input line 489.
 (pdftex.def)             Requested size: 317.07614pt x 304.26447pt.
 
-<Volunteer4_Back.png, id=835, 564.9105pt x 545.03625pt>
+<Volunteer4_Back.png, id=889, 564.9105pt x 545.03625pt>
 File: Volunteer4_Back.png Graphic file (type png)
 
 <use Volunteer4_Back.png>
 Package pdftex.def Info: Volunteer4_Back.png used on input line 501.
 (pdftex.def)             Requested size: 317.07614pt x 305.91681pt.
 
-<Volunteer4_Left.png, id=836, 567.3195pt x 543.83176pt>
+<Volunteer4_Left.png, id=890, 567.3195pt x 543.83176pt>
 File: Volunteer4_Left.png Graphic file (type png)
 
 <use Volunteer4_Left.png>
 Package pdftex.def Info: Volunteer4_Left.png used on input line 513.
 (pdftex.def)             Requested size: 317.07614pt x 303.94623pt.
- [42 <./Volunteer1_Back.png>]
-<WaistPlaneError.png, id=853, 1151.502pt x 548.0475pt>
+ [47 <./Volunteer1_Back.png>]
+<WaistPlaneError.png, id=907, 1151.502pt x 548.0475pt>
 File: WaistPlaneError.png Graphic file (type png)
 
 <use WaistPlaneError.png>
 Package pdftex.def Info: WaistPlaneError.png used on input line 532.
 (pdftex.def)             Requested size: 317.07614pt x 150.91003pt.
 
-<Volunteer2_Left.png, id=854, 564.9105pt x 548.0475pt>
+<Volunteer2_Left.png, id=908, 564.9105pt x 548.0475pt>
 File: Volunteer2_Left.png Graphic file (type png)
 
 <use Volunteer2_Left.png>
 Package pdftex.def Info: Volunteer2_Left.png used on input line 544.
 (pdftex.def)             Requested size: 317.07614pt x 307.60695pt.
- [43 <./Volunteer1_Right.png>]
+ [48 <./Volunteer1_Right.png>]
 Overfull \hbox (0.11629pt too wide) in paragraph at lines 597--598
 []\OT1/cmr/m/n/12 As seen in Table []5.12[] and Table []5.13[], the ellipse mod
 el was not successful in approximating
  []
 
-[44 <./Volunteer3_Back.png>] [45 <./Volunteer3_Right.png>] [46] [47 <./Voluntee
-r4_Back.png>] [48 <./Volunteer4_Left.png>] [49 <./WaistPlaneError.png>]
+[49 <./Volunteer3_Back.png>] [50 <./Volunteer3_Right.png>] [51] [52 <./Voluntee
+r4_Back.png>] [53 <./Volunteer4_Left.png>] [54 <./WaistPlaneError.png>]
 Overfull \hbox (6.53937pt too wide) in paragraph at lines 671--672
 \OT1/cmr/m/n/12 view. There exists no view validation system that protects agai
 nst the operator accidentally
  []
 
-[50 <./Volunteer2_Left.png>]) [51]
+[55 <./Volunteer2_Left.png>]) [56]
 \openout2 = `Analysis.aux'.
 
  (Analysis.tex
 Chapter 6.
-[52
+[57
 
 
 
-] [53] [54] [55]
+] [58] [59] [60]
 Overfull \hbox (4.48985pt too wide) in paragraph at lines 76--77
 \OT1/cmr/m/n/12 This makes them even more unreliable and further explains the o
 ccurrence of the "Incorrect
  []
 
-[56] [57] [58]
+[61] [62] [63]
 Overfull \hbox (2.13988pt too wide) in paragraph at lines 128--129
 []\OT1/cmr/m/n/12 However, the uncertainty may be slightly worse than the value
 s calculated, as the volunteer
  []
 
-[59] [60]
+[64] [65]
 Overfull \hbox (24.2077pt too wide) in paragraph at lines 158--159
 []\OT1/cmr/m/n/12 This wide spread of accuracies and large deviation from the a
 ctual circumference measurements
  []
 
-[61] [62] [63]) [64]
+[66] [67] [68]) [69]
 \openout2 = `Discussion.aux'.
 
  (Discussion.tex
 Chapter 7.
-) [65
+) [70
 
 
 
@@ -1039,7 +1161,7 @@ Chapter 7.
 
  (Conclusions.tex
 Chapter 8.
-) [66
+) [71
 
 
 
@@ -1053,14 +1175,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--178
 
  []
 
-[67
+[72
 
 
 
 ]
 \openout2 = `References.aux'.
 
- (References.tex [68
+ (References.tex [73
 
 
 ]
@@ -1129,9 +1251,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 j131025.aspx.
  []
 
-[69
+[74
 
-]) [70]
+]) [75]
 \openout2 = `appendixa.aux'.
 
  (appendixa.tex
@@ -1556,16 +1678,16 @@ Overfull \hbox (13.68756pt too wide) in paragraph at lines 41--41
 []|\OT1/cmr/m/n/12 113.74%| 
  []
 
-) [71
+) [76
 
 
 
-] [72]
+] [77]
 \openout2 = `appendixb.aux'.
 
  (appendixb.tex
 Appendix B.
-) [73
+) [78
 
 
 
@@ -1580,17 +1702,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 179.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 179.
 Package rerunfilecheck Info: File `"Final Report".out' has not changed.
-(rerunfilecheck)             Checksum: 3F6269ADC7FCDFCCD285780AC031D252;3923.
+(rerunfilecheck)             Checksum: 7727617801860BDB957074A5133C68A9;4161.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 179.
  ) 
 Here is how much of TeX's memory you used:
- 9266 strings out of 493323
- 132054 string characters out of 3139062
- 276154 words of memory out of 3000000
- 12174 multiletter control sequences out of 15000+200000
+ 9298 strings out of 493323
+ 132572 string characters out of 3139062
+ 279409 words of memory out of 3000000
+ 12184 multiletter control sequences out of 15000+200000
  11428 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,12n,43p,987b,549s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,13n,43p,987b,549s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/Mi
@@ -1601,9 +1723,9 @@ c/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy1
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "Final Report.pdf" (82 pages, 2014583 bytes).
+Output written on "Final Report.pdf" (87 pages, 2066240 bytes).
 PDF statistics:
- 1158 PDF objects out of 1200 (max. 8388607)
- 349 named destinations out of 1000 (max. 500000)
- 601 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1216 PDF objects out of 1440 (max. 8388607)
+ 370 named destinations out of 1000 (max. 500000)
+ 630 words of extra memory for PDF output out of 10000 (max. 10000000)
 

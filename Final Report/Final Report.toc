@@ -1,8 +1,8 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Background to the study}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Objectives of this study}{1}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Problems to be investigated}{1}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Purpose of the study}{1}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.2}Objectives of this study}{2}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Problems to be investigated}{2}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Purpose of the study}{2}{subsection.1.2.2}
 \contentsline {section}{\numberline {1.3}Scope and Limitations}{2}{section.1.3}
 \contentsline {section}{\numberline {1.4}Plan of development}{2}{section.1.4}
 \contentsline {chapter}{\numberline {2}Literature Review}{3}{chapter.2}
@@ -84,79 +84,93 @@
 \contentsline {subsection}{\numberline {2.2.2}Measurement}{24}{subsection.2.2.2}
 \contentsline {subsubsection}{3D Space}{24}{section*.73}
 \contentsline {subsubsection}{Accuracy}{24}{section*.74}
-\contentsline {subsection}{\numberline {2.2.3}Microsoft SDK}{25}{subsection.2.2.3}
-\contentsline {subsubsection}{Digital Information}{25}{section*.75}
-\contentsline {subsubsection}{Kinect Toolkit}{25}{section*.76}
-\contentsline {paragraph}{BackgroundRemoval Class}{25}{section*.77}
-\contentsline {paragraph}{Colour, Depth Class}{25}{section*.78}
-\contentsline {subsection}{\numberline {2.2.4}Clothing}{25}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Modelling}{25}{subsection.2.2.5}
-\contentsline {subsubsection}{Ellipse}{25}{section*.79}
-\contentsline {subsection}{\numberline {2.2.6}Augmented Reality}{25}{subsection.2.2.6}
-\contentsline {subsection}{\numberline {2.2.7}Accuracy/Other Improvement }{25}{subsection.2.2.7}
-\contentsline {chapter}{\numberline {3}Solution Design}{26}{chapter.3}
-\contentsline {section}{\numberline {3.1}Implementation Design}{26}{section.3.1}
-\contentsline {section}{\numberline {3.2}Component Selection}{26}{section.3.2}
-\contentsline {section}{\numberline {3.3}Algorithm Design}{26}{section.3.3}
-\contentsline {section}{\numberline {3.4}Experimental Design}{27}{section.3.4}
-\contentsline {chapter}{\numberline {4}Methodology}{28}{chapter.4}
-\contentsline {section}{\numberline {4.1}Aim}{28}{section.4.1}
-\contentsline {chapter}{\numberline {5}Results}{30}{chapter.5}
-\contentsline {section}{\numberline {5.1}Length and Extremity Measurement}{30}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Overall Results}{31}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Length Performance}{31}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}View Performance}{32}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Limb Performance}{33}{subsection.5.1.4}
-\contentsline {subsection}{\numberline {5.1.5}Impact of Clothing}{34}{subsection.5.1.5}
-\contentsline {subsection}{\numberline {5.1.6}Uncertainty}{37}{subsection.5.1.6}
-\contentsline {subsection}{\numberline {5.1.7}Other Empirical Observations}{38}{subsection.5.1.7}
-\contentsline {subsubsection}{Background Removal Error}{38}{section*.80}
-\contentsline {paragraph}{Extra Padding}{38}{section*.81}
-\contentsline {paragraph}{Incorrect Pixel Removal}{39}{section*.82}
-\contentsline {subsubsection}{Overlap Error}{40}{section*.83}
-\contentsline {subsubsection}{Missing Measurements}{41}{section*.84}
-\contentsline {subsubsection}{Incorrect Waist Plane}{42}{section*.85}
-\contentsline {section}{\numberline {5.2}3D Modelling}{44}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Ellipse Model}{44}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Rectangle Model}{45}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}User Interface Observations}{47}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Measurement Processing}{48}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}View Selection}{50}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}User Guidance}{51}{subsection.5.3.3}
-\contentsline {chapter}{\numberline {6}Analysis}{52}{chapter.6}
-\contentsline {section}{\numberline {6.1}Length and Extremity Measurement}{52}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Overall}{53}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Human Detection}{54}{subsection.6.1.2}
-\contentsline {subsubsection}{Body Detection}{54}{section*.86}
-\contentsline {subsubsection}{3D Measurement}{54}{section*.87}
-\contentsline {subsubsection}{Kinect Failures}{54}{section*.88}
-\contentsline {paragraph}{Range and Resolution}{54}{section*.89}
-\contentsline {paragraph}{Detection}{55}{section*.90}
-\contentsline {paragraph}{Inferred Joints}{55}{section*.91}
-\contentsline {paragraph}{Jitter}{56}{section*.92}
-\contentsline {paragraph}{Skeleton Mapping}{56}{section*.93}
-\contentsline {subsection}{\numberline {6.1.3}Extremity Detection}{57}{subsection.6.1.3}
-\contentsline {subsubsection}{Clothing}{57}{section*.94}
-\contentsline {subsubsection}{Padding}{58}{section*.95}
-\contentsline {subsubsection}{Overlap}{58}{section*.96}
-\contentsline {subsubsection}{Kinect Accuracy}{59}{section*.97}
-\contentsline {paragraph}{Data Collection}{59}{section*.98}
-\contentsline {paragraph}{Errors}{59}{section*.99}
-\contentsline {subsection}{\numberline {6.1.4}Measurement Validity}{59}{subsection.6.1.4}
-\contentsline {subsubsection}{Uncertainty}{59}{section*.100}
-\contentsline {subsubsection}{Error Checking}{60}{section*.101}
-\contentsline {section}{\numberline {6.2}3D Modelling}{60}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Overall}{60}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Ellipse Model}{61}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Rectangle Model}{62}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}User Interface}{62}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Autonomy}{62}{subsection.6.3.1}
-\contentsline {paragraph}{View Selection}{63}{section*.102}
-\contentsline {paragraph}{Measurement Process}{63}{section*.103}
-\contentsline {subsection}{\numberline {6.3.2}Aesthetics}{63}{subsection.6.3.2}
-\contentsline {chapter}{\numberline {7}Discussion}{65}{chapter.7}
-\contentsline {chapter}{\numberline {8}Conclusions}{66}{chapter.8}
-\contentsline {chapter}{\numberline {9}Recommendations}{67}{chapter.9}
-\contentsline {chapter}{\numberline {A}Detailed Results of Volunteers}{71}{appendix.A}
-\contentsline {chapter}{\numberline {B}Addenda}{73}{appendix.B}
-\contentsline {section}{\numberline {B.1}Ethics Forms}{73}{section.B.1}
+\contentsline {subsection}{\numberline {2.2.3}Modelling}{25}{subsection.2.2.3}
+\contentsline {subsubsection}{Clothing}{25}{section*.75}
+\contentsline {subsubsection}{Ellipse}{25}{section*.76}
+\contentsline {subsection}{\numberline {2.2.4}Clothing Industry Context}{25}{subsection.2.2.4}
+\contentsline {paragraph}{Traditional Retailers}{25}{section*.77}
+\contentsline {paragraph}{Online Retailers}{25}{section*.78}
+\contentsline {paragraph}{Custom Tailoring}{26}{section*.79}
+\contentsline {subsection}{\numberline {2.2.5}Microsoft SDK}{26}{subsection.2.2.5}
+\contentsline {subsubsection}{Digital Information}{26}{section*.80}
+\contentsline {subsubsection}{Kinect Toolkit}{26}{section*.81}
+\contentsline {paragraph}{BackgroundRemoval Class}{26}{section*.82}
+\contentsline {paragraph}{Colour, Depth Class}{26}{section*.83}
+\contentsline {subsection}{\numberline {2.2.6}Augmented Reality}{26}{subsection.2.2.6}
+\contentsline {subsection}{\numberline {2.2.7}Accuracy/Other Improvement }{26}{subsection.2.2.7}
+\contentsline {chapter}{\numberline {3}Solution Design}{27}{chapter.3}
+\contentsline {section}{\numberline {3.1}Implementation Design}{27}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Overview}{27}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}End-to-End Implementation Journey}{29}{subsection.3.1.2}
+\contentsline {subsubsection}{Measurement System}{29}{section*.84}
+\contentsline {subsubsection}{Store Integration}{30}{section*.85}
+\contentsline {paragraph}{Traditional Retailers}{30}{section*.86}
+\contentsline {paragraph}{Partners}{31}{section*.87}
+\contentsline {subsubsection}{Cloud Management of Profile}{31}{section*.88}
+\contentsline {subsubsection}{title}{31}{section*.89}
+\contentsline {subsubsection}{title}{31}{section*.90}
+\contentsline {section}{\numberline {3.2}Component Level Design}{32}{section.3.2}
+\contentsline {section}{\numberline {3.3}Component Selection}{32}{section.3.3}
+\contentsline {section}{\numberline {3.4}Algorithm Design}{32}{section.3.4}
+\contentsline {section}{\numberline {3.5}Experimental Design}{32}{section.3.5}
+\contentsline {chapter}{\numberline {4}Methodology}{33}{chapter.4}
+\contentsline {section}{\numberline {4.1}Aim}{33}{section.4.1}
+\contentsline {chapter}{\numberline {5}Results}{35}{chapter.5}
+\contentsline {section}{\numberline {5.1}Length and Extremity Measurement}{35}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Overall Results}{36}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Length Performance}{36}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}View Performance}{37}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Limb Performance}{38}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Impact of Clothing}{39}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.6}Uncertainty}{42}{subsection.5.1.6}
+\contentsline {subsection}{\numberline {5.1.7}Other Empirical Observations}{43}{subsection.5.1.7}
+\contentsline {subsubsection}{Background Removal Error}{43}{section*.91}
+\contentsline {paragraph}{Extra Padding}{43}{section*.92}
+\contentsline {paragraph}{Incorrect Pixel Removal}{44}{section*.93}
+\contentsline {subsubsection}{Overlap Error}{45}{section*.94}
+\contentsline {subsubsection}{Missing Measurements}{46}{section*.95}
+\contentsline {subsubsection}{Incorrect Waist Plane}{47}{section*.96}
+\contentsline {section}{\numberline {5.2}3D Modelling}{49}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Ellipse Model}{49}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Rectangle Model}{50}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}User Interface Observations}{52}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Measurement Processing}{53}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}View Selection}{55}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}User Guidance}{56}{subsection.5.3.3}
+\contentsline {chapter}{\numberline {6}Analysis}{57}{chapter.6}
+\contentsline {section}{\numberline {6.1}Length and Extremity Measurement}{57}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Overall}{58}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Human Detection}{59}{subsection.6.1.2}
+\contentsline {subsubsection}{Body Detection}{59}{section*.97}
+\contentsline {subsubsection}{3D Measurement}{59}{section*.98}
+\contentsline {subsubsection}{Kinect Failures}{59}{section*.99}
+\contentsline {paragraph}{Range and Resolution}{59}{section*.100}
+\contentsline {paragraph}{Detection}{60}{section*.101}
+\contentsline {paragraph}{Inferred Joints}{60}{section*.102}
+\contentsline {paragraph}{Jitter}{61}{section*.103}
+\contentsline {paragraph}{Skeleton Mapping}{61}{section*.104}
+\contentsline {subsection}{\numberline {6.1.3}Extremity Detection}{62}{subsection.6.1.3}
+\contentsline {subsubsection}{Clothing}{62}{section*.105}
+\contentsline {subsubsection}{Padding}{63}{section*.106}
+\contentsline {subsubsection}{Overlap}{63}{section*.107}
+\contentsline {subsubsection}{Kinect Accuracy}{64}{section*.108}
+\contentsline {paragraph}{Data Collection}{64}{section*.109}
+\contentsline {paragraph}{Errors}{64}{section*.110}
+\contentsline {subsection}{\numberline {6.1.4}Measurement Validity}{64}{subsection.6.1.4}
+\contentsline {subsubsection}{Uncertainty}{64}{section*.111}
+\contentsline {subsubsection}{Error Checking}{65}{section*.112}
+\contentsline {section}{\numberline {6.2}3D Modelling}{65}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Overall}{65}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Ellipse Model}{66}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Rectangle Model}{67}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}User Interface}{67}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Autonomy}{67}{subsection.6.3.1}
+\contentsline {paragraph}{View Selection}{68}{section*.113}
+\contentsline {paragraph}{Measurement Process}{68}{section*.114}
+\contentsline {subsection}{\numberline {6.3.2}Aesthetics}{68}{subsection.6.3.2}
+\contentsline {chapter}{\numberline {7}Discussion}{70}{chapter.7}
+\contentsline {chapter}{\numberline {8}Conclusions}{71}{chapter.8}
+\contentsline {chapter}{\numberline {9}Recommendations}{72}{chapter.9}
+\contentsline {chapter}{\numberline {A}Detailed Results of Volunteers}{76}{appendix.A}
+\contentsline {chapter}{\numberline {B}Addenda}{78}{appendix.B}
+\contentsline {section}{\numberline {B.1}Ethics Forms}{78}{section.B.1}

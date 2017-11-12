@@ -81,7 +81,7 @@ A diagram illustrating the high-level functioning of the entire implementation i
 
 The implementation can be broken down into three major subsystems that are mentioned and explained in the following subsections:
 
-\subsubsection{Measurement System}
+\subsubsection{Measurement System} \label{measureSystem}
 This system's main purpose is to be able to determine the personalised body parameters of a customer and then generate a full 3D model of their body to provide useful information such as suggestions for clothing sizes. It will achieve this by using a Kinect, or another device with depth sensing capabilities. 
 
 The vision is that the Kinect would be integrated into a specially designed room. The customer would need to step into this room and hold certain poses. The Kinect, together with a back-end processing unit, would then create a full 3D. The entire process from start to finish should be less than ten minutes. 
@@ -102,25 +102,120 @@ If there is enough interest by various companies, a measurement booth can be bui
 \subsubsection{Cloud Management of Profile}
 Once the measurements of a person are determined and a digital profile is created, that information can now be more easily transferred. Partnerships may be made between clothing companies, online companies and even perhaps tailors. They may agree to share this information for an agreed upon amount and allow the costumer to have clothing suggestions for all the stores they shop at. Alternatively, a single online platform may be created that stores all these profiles and if a clothing supplier partners up with it, it can then provide information to the customers regarding the supplier's specific line of clothing.
 
-\subsubsection{title}
+\subsubsection{Potential Benefits}
+The effective and practical implementation of the above system has significant potential benefits for each of the stakeholders. Table \ref{tab:conProdBenefits} contains a summary of the potential benefits for consumers and producers in the different channels.
 
-\subsubsection{title}
-1) Online profile of people - Used for online shopping and retail shops\\
-2) Take measurements at a retailer - Virtual Dressing room - A part of the shopping experience and will reduce hassle of trying on clothes\\
-3) Amount wasted in trying on clothes or online returns?\\
-4) Could be used for personalised tailoring
-5) Example of UI - Explanation of how it works
+\begin{table}[htbp]
+	\centering
+	\caption{Potential benefits for consumers and producers in each of the three channels}
+	\begin{tabularx}{\textwidth}{|Y|Y|Y|}
+		\toprule
+		& 
+		\textit{\textbf{Consumers}} & 
+		\textit{\textbf{Producers}} \\
+		\midrule
+		\textit{\textbf{Retail}} & 
+		\begin{itemize}
+			\item No longer need to waste time and effort trying on clothes
+			\item Significantly reduces the shopping time required
+			\item Knowing exact sizes allows for calling ahead to check for availability
+		\end{itemize} & 
+		\begin{itemize}
+			\item More floor space to use more productively
+			\item Alleviates the security risk of trying on clothes
+			\item Will likely cause a reduction in costs due to exchanges
+		\end{itemize} \\
+		\midrule
+		\textit{\textbf{Online}} & 
+		\begin{itemize}
+			\item Knowing exact sizes reduces uncertainty of online shopping
+			\item Potential for clothe viewing using augmented reality
+			\item Reduces the need to exchange
+		\end{itemize} & 
+		\begin{itemize}
+			\item Reduces the costs associated with returns
+			\item Can expect an uptick in sales
+			\item No longer need to have an overly lenient returns policy
+		\end{itemize}\\
+		\midrule
+		\textit{\textbf{Tailoring}} & 
+		\begin{itemize}
+			\item Process is quick and only needs to happen once
+			\item Measurements can be sent ahead of time to reduce delay
+			\item No need to visit tailor before collection
+		\end{itemize} & 
+		\begin{itemize}
+			\item Reduce time taken for readings will improve productivity
+			\item No longer limited by number of skilled tailors
+			\item Might make mass production of custom clothing possible
+		\end{itemize} \\
+		\bottomrule
+	\end{tabularx}%
+	\label{tab:conProdBenefits}%
+\end{table}%
 
 \section{Component Level Design}
+This section details the design process used to create the measurement system mentioned in Section \ref{measureSystem}. It first begins with the selection process used to choose both the hardware and software of the system. It then proceeds into the design of the algorithm, which forms the largest part of the design process.
 
+\subsection{Component Selection}
 
-\section{Component Selection}
+\subsubsection{Hardware}
+
+\paragraph{Depth Sensor}
+When this project was first proposed, no hardware system was specified for use, However, it was indicated that a depth sensor should be the first technology explored to achieve this. Depth sensor technology has extensively been involved in projects performing analysis on human bodies. As such, this suggestion was used and a depth sensor was the hardware device chosen for the project. 
+
+The next step was to determine the particular depth sensor used. Initially, due to ease of availability, sensors such as the Intel RealSense, Asus XtionPRO Live and the Kinect for Xbox 360 were considered. However, it was swiftly decided that the Kinect be the sensor of choice. The reasons for this are given below:
+
+\begin{itemize}
+	\item The Kinect has in built skeleton tracking functionality
+	\item Microsoft has released an SDK (Software Development Kit) that allows for effective interfacing with the Kinect 
+	\item Many previous research papers have utilised the Kinect and thus the support for it is extensive
+	\item This project is for research purposes and there are no license conflicts with using the Kinect in this capacity
+\end{itemize}
+
+\paragraph{Kinect Choice}
+The next significant decision, however, was the version of Kinect used for the project. The first part of the process was the decision between the Kinect for Xbox 360 (Version 1 - v1) or the Kinect for Xbox One (Version 2 -v2). 
+
+The Kinect v2 uses ToF (Time-of-Flight) technology that has been shown to improve its accuracy. It also does not falter as significantly as the Kinect v1 in extreme constitutions such as darkness or direct sunlight. It also has a better working range as the accuracy of the Kinect v1's depth sensor degrades exponentially as the distance away from the sensor increases whereas the Kinect v2 stays almost constant over the same range. \cite{kinectComp2011} This can be seen in Figure \ref{fig:kinectV1V2Depth}. 
+
+\begin{figure}[ht]
+	\centering
+	{%
+		\setlength{\fboxsep}{0pt}%
+		\setlength{\fboxrule}{0.5pt}%
+		\fbox{
+			\includegraphics[width=0.7\textwidth]{kinectV1vsV2Depth.png}
+	}}
+	\caption{A graph showing the comparison of the accuracy and standard deviation of the Kinect v1 and Kinect v2 as distance from the sensor increases \cite{kinectComp2011}}
+	\label{fig:kinectV1V2Depth}
+\end{figure}
+
+However, despite these performance advantages of the Kinect v2, the Kinect v1 was chosen for this project for the following reasons:
+
+\begin{itemize}
+	\item The Kinect v1 was already available for use and the Kinect v2 was not
+	\item The tolerance advantage of the Kinect v2 to extreme condition is mitigated by:
+	\begin{itemize}
+		\item The Kinect will perform in normal conditions - I.e. It will be indoors, in a well lit room with no direct light shining on the Kinect (Mentioned more in detail in \hl{(Experiment Design Ref)}).
+		\item The Kinect v1 and v2 have very similar performance in normal conditions \cite{kinectComp2011}
+	\end{itemize}
+	\item Skeletal tracking only works effectively up to a distance of 3.5m. The difference in accuracy of the depth sensors only becomes significant after refore, the degradation of accuracy  of the 
+	\item Many previous research papers have utilised the Kinect and thus the support for it is extensive
+	\item This project is for research purposes and there are no license conflicts with using the Kinect in this capacity
+\end{itemize}
+
+\subsubsection{Software}
+Depth sensor from beginning\\
+Breifly others but definitely kinect\\ 
 1) Choice of Kinect - Compare to other depth sensors\\
 - Kinect v1 vs v2
 - Winddows vs Xbox
-2) Choice of Windows SDK\\
+2) Software platform\\ 
+Choice of Windows SDK\\
+Visual Studios\\
+C#\\
 
-\section{Algorithm Design}
+\subsection{Algorithm Design}
 1) Windows examples used - Background Removal, Colour Stream and Skeleton Tracking - NB - Why BackgroundRemoval instead of own method
 3D Points - No calibration
 

@@ -6,34 +6,55 @@
 \BOOKMARK [1][-]{section.1.3}{Scope and Limitations}{chapter.1}% 6
 \BOOKMARK [1][-]{section.1.4}{Plan of development}{chapter.1}% 7
 \BOOKMARK [0][-]{chapter.2}{Literature Review}{}% 8
-\BOOKMARK [0][-]{chapter.3}{Background Information}{}% 9
-\BOOKMARK [0][-]{chapter.4}{Solution Design}{}% 10
-\BOOKMARK [1][-]{section.4.1}{Implementation Design}{chapter.4}% 11
-\BOOKMARK [1][-]{section.4.2}{Component Selection}{chapter.4}% 12
-\BOOKMARK [1][-]{section.4.3}{Algorithm Design}{chapter.4}% 13
-\BOOKMARK [1][-]{section.4.4}{Experimental Design}{chapter.4}% 14
-\BOOKMARK [0][-]{chapter.5}{Methodology}{}% 15
-\BOOKMARK [1][-]{section.5.1}{Aim}{chapter.5}% 16
-\BOOKMARK [1][-]{section.5.2}{Hypothesis}{chapter.5}% 17
-\BOOKMARK [0][-]{chapter.6}{Results}{}% 18
-\BOOKMARK [1][-]{section.6.1}{Length and Extremity Measurement}{chapter.6}% 19
-\BOOKMARK [2][-]{subsection.6.1.1}{Overall Results}{section.6.1}% 20
-\BOOKMARK [2][-]{subsection.6.1.2}{Length Performance}{section.6.1}% 21
-\BOOKMARK [2][-]{subsection.6.1.3}{View Performance}{section.6.1}% 22
-\BOOKMARK [2][-]{subsection.6.1.4}{Limb Performance}{section.6.1}% 23
-\BOOKMARK [2][-]{subsection.6.1.5}{Impact of Clothing}{section.6.1}% 24
-\BOOKMARK [2][-]{subsection.6.1.6}{Uncertainty}{section.6.1}% 25
-\BOOKMARK [2][-]{subsection.6.1.7}{Other Empirical Observations}{section.6.1}% 26
-\BOOKMARK [1][-]{section.6.2}{3D Modelling}{chapter.6}% 27
-\BOOKMARK [1][-]{section.6.3}{User Interface Observations}{chapter.6}% 28
-\BOOKMARK [0][-]{chapter.7}{Analysis}{}% 29
-\BOOKMARK [1][-]{subsection.7.0.1}{Front Performance}{chapter.7}% 30
-\BOOKMARK [2][-]{subsection.7.0.2}{Left Performance}{subsection.7.0.1}% 31
-\BOOKMARK [2][-]{subsection.7.0.3}{Back Performance}{subsection.7.0.1}% 32
-\BOOKMARK [2][-]{subsection.7.0.4}{Right Performance}{subsection.7.0.1}% 33
-\BOOKMARK [0][-]{chapter.8}{Discussion}{}% 34
-\BOOKMARK [0][-]{chapter.9}{Conclusions}{}% 35
-\BOOKMARK [0][-]{chapter.10}{Recommendations}{}% 36
-\BOOKMARK [0][-]{appendix.A}{Detailed Results of Volunteers}{}% 37
-\BOOKMARK [0][-]{appendix.B}{Addenda}{}% 38
-\BOOKMARK [1][-]{section.B.1}{Ethics Forms}{appendix.B}% 39
+\BOOKMARK [1][-]{section.2.1}{Literature Guide}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.1.1}{Getting Started}{section.2.1}% 10
+\BOOKMARK [1][-]{section.2.2}{Background Information}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.1}{Kinect}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.2}{Measurement}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.3}{Microsoft SDK}{section.2.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.4}{Clothing}{section.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.5}{Modelling}{section.2.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.6}{Augmented Reality}{section.2.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.7}{Accuracy/Other Improvement }{section.2.2}% 18
+\BOOKMARK [0][-]{chapter.3}{Solution Design}{}% 19
+\BOOKMARK [1][-]{section.3.1}{Implementation Design}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.2}{Component Selection}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.3}{Algorithm Design}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.4}{Experimental Design}{chapter.3}% 23
+\BOOKMARK [0][-]{chapter.4}{Methodology}{}% 24
+\BOOKMARK [1][-]{section.4.1}{Aim}{chapter.4}% 25
+\BOOKMARK [0][-]{chapter.5}{Results}{}% 26
+\BOOKMARK [1][-]{section.5.1}{Length and Extremity Measurement}{chapter.5}% 27
+\BOOKMARK [2][-]{subsection.5.1.1}{Overall Results}{section.5.1}% 28
+\BOOKMARK [2][-]{subsection.5.1.2}{Length Performance}{section.5.1}% 29
+\BOOKMARK [2][-]{subsection.5.1.3}{View Performance}{section.5.1}% 30
+\BOOKMARK [2][-]{subsection.5.1.4}{Limb Performance}{section.5.1}% 31
+\BOOKMARK [2][-]{subsection.5.1.5}{Impact of Clothing}{section.5.1}% 32
+\BOOKMARK [2][-]{subsection.5.1.6}{Uncertainty}{section.5.1}% 33
+\BOOKMARK [2][-]{subsection.5.1.7}{Other Empirical Observations}{section.5.1}% 34
+\BOOKMARK [1][-]{section.5.2}{3D Modelling}{chapter.5}% 35
+\BOOKMARK [2][-]{subsection.5.2.1}{Ellipse Model}{section.5.2}% 36
+\BOOKMARK [2][-]{subsection.5.2.2}{Rectangle Model}{section.5.2}% 37
+\BOOKMARK [1][-]{section.5.3}{User Interface Observations}{chapter.5}% 38
+\BOOKMARK [2][-]{subsection.5.3.1}{Measurement Processing}{section.5.3}% 39
+\BOOKMARK [2][-]{subsection.5.3.2}{View Selection}{section.5.3}% 40
+\BOOKMARK [2][-]{subsection.5.3.3}{User Guidance}{section.5.3}% 41
+\BOOKMARK [0][-]{chapter.6}{Analysis}{}% 42
+\BOOKMARK [1][-]{section.6.1}{Length and Extremity Measurement}{chapter.6}% 43
+\BOOKMARK [2][-]{subsection.6.1.1}{Overall}{section.6.1}% 44
+\BOOKMARK [2][-]{subsection.6.1.2}{Human Detection}{section.6.1}% 45
+\BOOKMARK [2][-]{subsection.6.1.3}{Extremity Detection}{section.6.1}% 46
+\BOOKMARK [2][-]{subsection.6.1.4}{Measurement Validity}{section.6.1}% 47
+\BOOKMARK [1][-]{section.6.2}{3D Modelling}{chapter.6}% 48
+\BOOKMARK [2][-]{subsection.6.2.1}{Overall}{section.6.2}% 49
+\BOOKMARK [2][-]{subsection.6.2.2}{Ellipse Model}{section.6.2}% 50
+\BOOKMARK [2][-]{subsection.6.2.3}{Rectangle Model}{section.6.2}% 51
+\BOOKMARK [1][-]{section.6.3}{User Interface}{chapter.6}% 52
+\BOOKMARK [2][-]{subsection.6.3.1}{Autonomy}{section.6.3}% 53
+\BOOKMARK [2][-]{subsection.6.3.2}{Aesthetics}{section.6.3}% 54
+\BOOKMARK [0][-]{chapter.7}{Discussion}{}% 55
+\BOOKMARK [0][-]{chapter.8}{Conclusions}{}% 56
+\BOOKMARK [0][-]{chapter.9}{Recommendations}{}% 57
+\BOOKMARK [0][-]{appendix.A}{Detailed Results of Volunteers}{}% 58
+\BOOKMARK [0][-]{appendix.B}{Addenda}{}% 59
+\BOOKMARK [1][-]{section.B.1}{Ethics Forms}{appendix.B}% 60

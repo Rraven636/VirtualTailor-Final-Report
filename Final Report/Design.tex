@@ -1,16 +1,10 @@
 \chapter{Solution Design}
+This chapter details and explains various aspects of the solution design. It begins with a explanation of the envisioned implementation of the solution in the clothing industry ecosystem. This is followed by a detailed account of the design process used to create the solution and lastly, an extensive overview of the experimental process used to test the solution.
 
 \section{Implementation Design}
 
-
-The key aim of the overall solution is to alleviate stresses on both the consumer and supplier side of : Reduce inconvenience experienced by consumers and limit resources wasted by producers.
-
-The solution will achieve this in the following key manners:
-\begin{itemize}
-	\item Create a an easy to use sysetm
-\end{itemize} 
-
-This overall solution aims to be applicable and provide relief in all three channels clothing channels mentioned in Section \ref{clothingIndustryContext}. However, in order to do this, an analysis of pain points of consumers and producers in each channel must be performed. Shown in Table \ref{tab:conProdPainPoints} is a summary of such an analysis.
+\subsection{Overview}
+The solution aims to form part of larger practical implementation that will be applicable and provide relief in all three clothing channels mentioned in Section \ref{clothingIndustryContext}. However, in order to understand the needs the implementation must address, an analysis of pain points of consumers and producers in each channel must be performed. Shown in Table \ref{tab:conProdPainPoints} is a summary of such an analysis.
 
 \begin{table}[htbp]
 	\centering
@@ -58,6 +52,32 @@ This overall solution aims to be applicable and provide relief in all three chan
 	\end{tabularx}%
 	\label{tab:conProdPainPoints}%
 \end{table}%
+
+
+The aim of the overall implementation is to alleviate stresses on both consumers and suppliers that are inherent to the status quo.  In order to achieve this, the implementation will consist of the following key components: 
+
+\begin{itemize}
+	\item A compact, expedient and easy to use system that accurately measures the body parameters of a customer and provide clothing suggestions
+	\item A platform that retains this customer information and creates a digital profile accessible to the customer and shareable between retailers  
+	\item An intuitive interface that allows the customer to seamlessly get advise on clothing at his/her retailers of choice	
+\end{itemize} 
+
+A detailed end-to-end journey of the implementation is given in the following section.
+
+\subsection{End-to-End Implementation Journey}
+
+\begin{figure}[ht]
+	\centering
+	{%
+		\setlength{\fboxsep}{0pt}%
+		\setlength{\fboxrule}{0.5pt}%
+		\fbox{
+			\includegraphics[width=0.7\textwidth]{End_to_End_Implementation.png}
+	}}
+	\caption{An illustration of the End-to-End journey of the envisioned implementation}
+	\label{fig:endToEndImplementation}
+\end{figure}
+
 
 1) Online profile of people - Used for online shopping and retail shops\\
 2) Take measurements at a retailer - Virtual Dressing room - A part of the shopping experience and will reduce hassle of trying on clothes\\

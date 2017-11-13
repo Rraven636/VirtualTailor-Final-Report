@@ -199,23 +199,41 @@ However, despite these performance advantages of the Kinect v2, the Kinect v1 wa
 		\item The Kinect will perform in normal conditions - I.e. It will be indoors, in a well lit room with no direct light shining on the Kinect (Mentioned more in detail in \hl{(Experiment Design Ref)}).
 		\item The Kinect v1 and v2 have very similar performance in normal conditions \cite{kinectComp2011}
 	\end{itemize}
-	\item Skeletal tracking only works effectively up to a distance of 3.5m. The difference in accuracy of the depth sensors only becomes significant after refore, the degradation of accuracy  of the 
-	\item Many previous research papers have utilised the Kinect and thus the support for it is extensive
-	\item This project is for research purposes and there are no license conflicts with using the Kinect in this capacity
+	\item Skeletal tracking only works effectively up to a distance of 3.5m (Section \hl{(Skel Tracking Ref)}) and the difference in accuracy of the depth sensors only becomes significant after 3m as seen in Figure \ref{fig:kinectV1V2Depth}. Working within the 3m range makes the accuracy difference negligible.
+\end{itemize}
+
+Lastly, the Kinect for Xbox 360 was chosen instead of the Kinect for Windows for the following reasons:
+
+\begin{itemize}
+	\item The Kinect for Xbox 360 with a USB adapter was already available
+	\item These two Kinects are almost functionally identical, except for near range depth mode being unavailable in the Kinect for Xbox \hl{(Kinect Near Range Mode)}
+	\item Near Range mode is not utilised in this project and thus, this lack of functionality is no essential.
 \end{itemize}
 
 \subsubsection{Software}
-Depth sensor from beginning\\
-Breifly others but definitely kinect\\ 
-1) Choice of Kinect - Compare to other depth sensors\\
-- Kinect v1 vs v2
-- Winddows vs Xbox
-2) Software platform\\ 
-Choice of Windows SDK\\
-Visual Studios\\
-C\#\\
+The software used to design this solution was largely dictated by the choice of the Kinect as the underlying hardware. 
+
+In order to maximise the functionality of the Kinect, the Kinect for Windows SDK was utilised. This SDK provides an API (Application Programming Interface) for the Kinect in both C\# and C++ programming languages. 
+
+C\# was chosen as the language in which to build the solution as at this stage of the project, finite control over aspects of the Kinect offered by the C++ is not necessary. 
+
+Also provided with the SDK, is Microsoft Toolkit for the Kinect. This toolkit contains further functionality over and above those provided by the SDK. Included with the toolkit are full coded examples of different basic applications using the Kinect SDK and toolkit to demonstrate how to use them. Each of these examples come with their own documentation and are in the form of Visual Studio Projects.
+
+Visual Studios is Microsoft's official IDE (Integrated Development Environment). It supports development in a variety of languages including C\# and C++. Due to the SDK reliance on Visual Studios, its wide functionality and extensive online support, it was chosen as the IDE for this project. 
+
+\hl{(Include NUI Info and Samples used + Documentation)}
 
 \subsection{Algorithm Design}
+As mentioned above, the main part of this solutions design was in the design of the algorithms required to make the measurement subsystem a reality. This section details the design process followed and begins with an overview of the created system and how it functions. Proceeding that is an explanation of the system's architecture and finally, extensive details about the functional blocks that form the measurement subsystem. 
+
+\subsubsection{Overview}
+
+
+\subsubsection{Architecture}
+
+
+\subsubsection{Functional Blocks}
+
 1) Windows examples used - Background Removal, Colour Stream and Skeleton Tracking - NB - Why BackgroundRemoval instead of own method
 3D Points - No calibration
 

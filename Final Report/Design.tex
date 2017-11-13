@@ -227,12 +227,147 @@ Visual Studios is Microsoft's official IDE (Integrated Development Environment).
 As mentioned above, the main part of this solutions design was in the design of the algorithms required to make the measurement subsystem a reality. This section details the design process followed and begins with an overview of the created system and how it functions. Proceeding that is an explanation of the system's architecture and finally, extensive details about the functional blocks that form the measurement subsystem. 
 
 \subsubsection{Overview}
+Seen in Figure \ref{fig:overallAlgorithm}, is a depiction of the real-time functioning of the overall measurement system. (I.e. This illustrates the process required from converting a detected human to a 3D Model of themselves). 
 
+\begin{figure}[ht]
+	\centering
+	{%
+		\setlength{\fboxsep}{0pt}%
+		\setlength{\fboxrule}{0.5pt}%
+		\fbox{
+			\includegraphics[width=0.7\textwidth]{OverallAlgorithm.png}
+	}}
+	\caption{An illustration of the overall functioning of the measurement subsystem created.}
+	\label{fig:overallAlgorithm}
+\end{figure}
+
+The overall functioning is know illustrated with a walk-through of the system:
+
+\paragraph{Step 1: } A customer (person being measured), steps in front of the Kinect sensor at a specified distance and faces it directly. (Operation conditions explained more in Section \hl{(Experiment Design)}) At the same time, an operator controls the UI (User Interface) on the host computer. The operator specifies that the user is facing the Kinect directly and records the readings of the customer. An image of the customer, with a rendered skeleton (Green Lines) and measurement planes (Red Lines), together with their 3D readings appear on the UI. These readings correspond to the 3D distance of the extremities of their respective limb (I.e. The 3D distance between the start and end point of the red lines). An example of this is seen in Figure \ref{fig:designVol2Front}. 
+
+\begin{figure}[ht]
+	\centering
+	{%
+		\setlength{\fboxsep}{0pt}%
+		\setlength{\fboxrule}{0.5pt}%
+		\fbox{
+			\includegraphics[width=0.7\textwidth]{Volunteer2_Front_Blurred.png}
+	}}
+	\caption{An example of the UI when the front reading of a customer is taken}
+	\label{fig:designVol2Front}
+\end{figure}
+
+\paragraph{Step 2: } The customer rotates $90^{\circ}$ clockwise and exposes the left side of the their body. The operator specifies that the customer is displaying the left side of their body and records the readings. An updated image and set of readings populate the UI. An example of this is seen in Figure \ref{fig:designVol2Left}. 
+
+\begin{figure}[ht]
+	\centering
+	{%
+		\setlength{\fboxsep}{0pt}%
+		\setlength{\fboxrule}{0.5pt}%
+		\fbox{
+			\includegraphics[width=0.7\textwidth]{Volunteer2_Left.png}
+	}}
+	\caption{An example of the UI when the left reading of a customer is taken}
+	\label{fig:designVol2Left}
+\end{figure}
+
+\paragraph{Step 3: } The customer rotates another $90^{\circ}$ clockwise and is now facing $180^{\circ}$ away from the Kinect. The operator specifies that the customer is displaying their back and records the readings. An updated image and set of readings populate the UI. An example of this is seen in Figure \ref{fig:designVol2Back}. 
+
+\begin{figure}[ht]
+	\centering
+	{%
+		\setlength{\fboxsep}{0pt}%
+		\setlength{\fboxrule}{0.5pt}%
+		\fbox{
+			\includegraphics[width=0.7\textwidth]{Volunteer2_Back.png}
+	}}
+	\caption{An example of the UI when the back reading of a customer is taken}
+	\label{fig:designVol2Back}
+\end{figure}	
+
+\paragraph{Step 4: } The customer rotates a final $90^{\circ}$ clockwise and is now displaying the right side of their body to the Kinect. The operator specifies that the customer is displaying their right side and records the readings. An updated image and set of readings populate the UI. An example of this is seen in Figure \ref{fig:designVol2Right}. 
+
+\begin{figure}[ht]
+	\centering
+	{%
+		\setlength{\fboxsep}{0pt}%
+		\setlength{\fboxrule}{0.5pt}%
+		\fbox{
+			\includegraphics[width=0.7\textwidth]{Volunteer2_Right_Blurred.png}
+	}}
+	\caption{An example of the UI when the right reading of a customer is taken}
+	\label{fig:designVol2Right}
+\end{figure}
+
+\paragraph{Step 5: } All the necessary readings have been taken and the customer is free to move. A results button now becomes available for the operator. When pressed, a pop-up window is displayed with the 3D circumferences and lengths of certain parts of the customer's body. An example of this is seen in Figure \ref{fig:designVol2Front}. At this point, another program would run that maps the 3D circumference values to clothing sizes that can help advise the customers shopping choices. (This application is part of the envisioned solution but was not implemented in this project). 
+
+\begin{figure}[ht]
+	\centering
+	{%
+		\setlength{\fboxsep}{0pt}%
+		\setlength{\fboxrule}{0.5pt}%
+		\fbox{
+			\includegraphics[width=0.7\textwidth]{Volunteer2_Circumference.png}
+	}}
+	\caption{An example of the UI when the results button is pressed and final pop-up window is shown.}
+	\label{fig:designVol2Circum}
+\end{figure}
+
+Now that an overall feel for the system has been gained, a more detailed explanation of the architecture and functional blocks will be given in following sections. 
 
 \subsubsection{Architecture}
+The overall program consists of three classes and a main WPF (Windows Presentation Foundation) form or window. The window is the UI of the system and facilitates the interaction of the operator with the program. The three classes created and used are SkeletonLib, Measure and Circumference3D. The overall interaction between the classes and the main window is depicted in Figure \ref{fig:algorithmArchitecture}. 
 
+\begin{figure}[ht]
+	\centering
+	{%
+		\setlength{\fboxsep}{0pt}%
+		\setlength{\fboxrule}{0.5pt}%
+		\fbox{
+			\includegraphics[width=0.7\textwidth]{algorithmArchitecture.png}
+	}}
+	\caption{An illustration of the programs architecture and their interconnections}
+	\label{fig:algorithmArchitecture}
+\end{figure}
 
 \subsubsection{Functional Blocks}
+This section goes into detail about the functional blocks of the measurement subsystem or program. The system can be broken into 3 major functional blocks that will be explained in the following paragraphs:
+
+\paragraph{Measurement} The primary functional block is responsible for obtaining readings for the extremities of the measured person's body. A summary of the process is provided below:
+
+\begin{enumerate}
+	\item Use BackgroundRemoval API to receive background removed image.
+	\item Create SkeletonLib Object and send it Skeleton and background removed image.
+	\item Render skeleton and joints using API.
+	\item Create perpendicular measurement planes on the arms, legs and spine and plane across hips for waist.
+	\item Starting at the bone, iterate through the colour pixels on the measurement planes until a start and end point is detected.
+	\item Use the Measure class to obtain the 3D distances using the start and end points.
+	\item Store the value for each measurement.
+\end{enumerate}
+
+For certain aspects of the above process, further explanations are given below:
+
+\subparagraph{Measurement Planes}
+The readings taken in this process correspond to the Lower and Upper Left and Right Arms, Lower and Upper Left and Right Legs, Chest and Waist. Their positions can be seen in Figure: \ref{fig:measurementPlanes}.
+
+\begin{figure}[ht]
+	\centering
+	{%
+		\setlength{\fboxsep}{0pt}%
+		\setlength{\fboxrule}{0.5pt}%
+		\fbox{
+			\includegraphics[width=0.7\textwidth]{measurementPlanes.png}
+	}}
+	\caption{An illustration of the programs architecture and their interconnections}
+	\label{fig:measurementPlanes}
+\end{figure}
+
+For the arms, legs and chest measurements, all starting points were defined as the midpoint of the bone on which they were situation. In order to create these planes, the negative reciprocal of the gradient of the bone on which they resided and the starting point (midpoint) was used to create a straight line function perpendicular to the bone. Navigating along this plane entailed moving in either the positive or negative x-direction returning a new y-value. The colour pixel at that given coordinate would then be returned an analysed.
+
+\subparagraph{Determining Start and End Points}
+An extremity was defined as the first pixel detected along the measurement plane that was trannsparent (Pixels removed from the background had their 4th bit set to 0 therefore signalling that they were transparent and removed)
+
+
 
 1) Windows examples used - Background Removal, Colour Stream and Skeleton Tracking - NB - Why BackgroundRemoval instead of own method
 3D Points - No calibration

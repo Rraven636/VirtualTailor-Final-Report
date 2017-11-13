@@ -1,7 +1,18 @@
 \chapter{Conclusions}
 
-These are the conclusions from the investivation and how the investigation changes things in this field or contributes to current knowledge...
+\subsection{Overall}
+From the performance of the system created and tested, it is clear that an implementable solution using a Kinect sensor is certainly possible. Based on the results analysed, the system was able to determine majority of the measurements and most with an accuracy within the desired range. That being said, a large amount of further research and development is needed before this solution become practical. Additionally, the data set used was effective in identifying trends, however, a larger data set should be used and analysed determine the legitimacy of these trends. Each of the following subsections provide conclusions on their respective functional block of the system. Chapter \ref{recommendations} suggests possible solutions or further areas of exploration to many problems expressed in this chapter. 
 
-Draw suitable and intelligent conclusions from your results and subsequent discussion.
+\subsection{Extremity Measurements}
+This formed the crux of the project and for the most part, performed within expected ranges: Average accuracy, length accuracy, view accuracy and limb accuracy all fell within the desired ranges. However, these ranges used were relatively large and were used to prove the "rough" efficacy of the system. For a solution to be viable, very accurate results would be required and the maximum allowed error would be in the region of $<5\%$. 
 
-However, for the purposes of a first attempt at the project to get an overall understanding - Macro understanding was fine
+Additionally, the system exhibited a significant weakness to clothing being worn. In terms of the envisioned implementation, customers would be more likely to use the system if they did not need to remove their clothes as they may feel uneasy about being exposed in front of a data collection device. Therefore, the system must be able to compensate for clothing very well before it is viable for production. Again, clothing should have a minimal impact on results and should not affect the accuracy by more than 10\%.
+
+Lastly the system has to be reliable and cannot be prone to errors. Therefore, many of the empirically detected errors such as missing limb measurements, overlap error, background padding and incorrect waist plane need to be adjusted for. Thorough analysis needs to be conducted in order to find and/or confirm the sources of these errors and develop a multi-pronged approach to deal with them; considering that in some cases, there may exist certain trade-offs.
+
+\subsection{Modelling}
+The modelling section of the program did not produce results within the desired range. The rectangle model clearly outperformed the ellipse model. However, before any model is completely abandoned, further analysis should be conducted to understand the orientations the body may possess in the different views and understand exactly with what the extremity measurement corresponds. Although, if the ellipse model is deemed ineffective, the rectangle model still can be used as defining the maximum boundaries of the body. After that, further modelling techniques can be used to improve the curvature fit to the body.
+
+Although this functional block did not take precedence in this project, its importance cannot be understated. A working solution is only viable and meaningful if it has a useful application. This step is essential for mapping body parameters to clothing sizes and without which, the solution may not have the perceived value.
+  
+\subsection{User Interface}

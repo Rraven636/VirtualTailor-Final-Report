@@ -362,11 +362,19 @@ The readings taken in this process correspond to the Lower and Upper Left and Ri
 	\label{fig:measurementPlanes}
 \end{figure}
 
-For the arms, legs and chest measurements, all starting points were defined as the midpoint of the bone on which they were situation. In order to create these planes, the negative reciprocal of the gradient of the bone on which they resided and the starting point (midpoint) was used to create a straight line function perpendicular to the bone. Navigating along this plane entailed moving in either the positive or negative x-direction returning a new y-value. The colour pixel at that given coordinate would then be returned an analysed.
+For the arms, legs and chest measurements, all starting points were defined as the midpoint of the bone on which they were situation. In order to create these planes, the negative reciprocal of the gradient of the bone on which they resided and the starting point (midpoint) was used to create a straight line function perpendicular to the bone. For the waist measurement, the plane was drawn along the hips. Navigating along this plane entailed moving in either the positive or negative x-direction returning a new y-value. The colour pixel at that given coordinate would then be returned an analysed. 
 
 \subparagraph{Determining Start and End Points}
-An extremity was defined as the first pixel detected along the measurement plane that was trannsparent (Pixels removed from the background had their 4th bit set to 0 therefore signalling that they were transparent and removed)
+An extremity was defined as the first pixel detected along the measurement plane that was transparent (Pixels removed from the background were set as transparent by the API). This colour pixel would then be mapped to skeleton space using the API. However, if the skeleton point did not exist or was too far behind the person detected, a refinement algorithm was run to move back across the plane to find the first reliable 3D point. This was performed on either side of the limb and the starting and ending points were determined.
 
+\subparagraph{3D Measurement}
+Once the starting and ending points were returned, the 3D points were used to calculate the distance between them using Equation \ref{eq: distance}. This was done for each measurement.
+
+\paragraph{3D Circumference Modelling}
+The part of the program was the determination of the 3D circumference of the limbs measured in the previous step. To accomplish this, readings for each view were required (I.e. When the detected person was facing in different directions). Each set of readings acquired followed the process above. However, for left and right readings, the side of the body not visible was removed and readings were made unavailable. For the back readings, due to the Kinect's inability to detect the difference between a person facing it and directly away from it, the limbs had to be swapped to compensate for this. Once all the readings are available, averages are taken of opposing sides (I.e. left and right, and front and back) if the readings are available (Left and right limbs will only have one side view reading). The circumference is then modelled using either an ellipse or a rectangle where these average values either form the axes of an ellipse or the length and width of a rectangle. 
+
+\paragraph{User Interface}
+The last part of the program is the user interface that facilitates the measurement process. As seen in Figure \ref{fig:designVol2Front}, on the bottom left of the screen is a radio button group used to select the view of measurement. The operator has to select this before pressing the measurement button. Ideally, a successful reading is taken for each view and then a results button appears next to the measurement button. This allows for the viewing of circumference and length values.
 
 
 1) Windows examples used - Background Removal, Colour Stream and Skeleton Tracking - NB - Why BackgroundRemoval instead of own method
@@ -380,6 +388,12 @@ An extremity was defined as the first pixel detected along the measurement plane
 - Create axes for measurement - Perpendicular or straight depending on particular measurement
 
 \section{Experimental Design}
+The following section details the process used to test the above designed system.
+
+\subsection{Constraints}
+For the purposes of the experiment, only male participants were used. The reason for this was that their is a physical difference between the male and female body. A working solution would need to be created for the male body and then adapted for the slightly more complex female body.
+
+The experiment requires an operator and a volunteer. The volunteer stands in front of the Kinect and rotates, while the operator controls the UI. 
 - Constraints - Men, distance from Kinect, height of Kinect, Number of views, 3D Modelling, control distance - box of 0.5m
 - UI to run simulated dressing room
 - Volunteer to pose as instructed by person controlling UI
